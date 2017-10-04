@@ -1,2 +1,6 @@
-.sass-cache/
 *.css.map
+.idea
+assets
+node_modules/
+layouts
+public

@@ -1,0 +1,2007 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CSS Starter Kit</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../public/css/vendor.css">
+    <link rel="stylesheet" href="../public/css/app.css">
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/">Upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Main-body-container -->
+<main>
+    <div class="main-container documentation">
+        <aside>
+            <div id="sidebar" class="sidebar">
+                <div class="brand">
+                    <a href="../index.html" class="logo">
+                        <h1>Starterkit</h1>
+                    </a>
+                </div>
+                <div class="sidebar-nav">
+                    <ul id="accordion" class="accordion">
+                        <li class="default open">
+                            <div class="link">Getting Started <i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li><a href="#introduction">Introduction</a></li>
+                                <li><a href="#quick-start">Quick Start</a></li>
+                                <li><a href="#installation">Installation</a></li>
+                                <li><a href="#browser-support">Browser support</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">Element <i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li><a href="#buttons">Buttons</a></li>
+                                <li><a href="#forms">Forms</a></li>
+                                <li><a href="#icons">Icons</a></li>
+                                <li><a href="#labels">Labels</a></li>
+                                <li><a href="#media">Media</a></li>
+                                <li><a href="#typography">Typography</a></li>
+                                <li><a href="#table">Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">Layout <i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li><a href="#grid">Flexbox Responsive Grid</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">Components <i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li><a href="#accordion">Accordions</a></li>
+                                <li><a href="#alerts">Alerts</a></li>
+                                <li><a href="#avatars">Avatars</a></li>
+                                <li><a href="#badges">Badges</a></li>
+                                <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                                <li><a href="#dropdown">Dropdown</a></li>
+                                <li><a href="#empty-states">Empty States</a></li>
+                                <li><a href="#inputs">Inputs</a></li>
+                                <li><a href="#menus">Menus</a></li>
+                                <li><a href="#modals">Modals</a></li>
+                                <li><a href="#navs">Navs</a></li>
+                                <li><a href="#pagination">Pagination</a></li>
+                                <li><a href="#tabs">Tabs</a></li>
+                                <li><a href="#tooltips">Tooltips</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">Utilities <i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li><a href="#colors">Colors</a></li>
+                                <li><a href="#display">Display</a></li>
+                                <li><a href="#loading">Loading</a></li>
+                                <li><a href="#position">Position</a></li>
+                                <li><a href="#shapes">Shapes</a></li>
+                                <li><a href="#text">Text</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">Experimental <i class="fa fa-chevron-down"></i></div>
+                            <ul class="submenu">
+                                <li><a href="#calenders">Calenders</a></li>
+                                <li><a href="#carousels">Carousels</a></li>
+                                <li><a href="#offcanvas">Off Canvas</a></li>
+                                <li><a href="#parallax-card">Parallax Card</a></li>
+                                <li><a href="#parallex-header">Parallax Header</a></li>
+                                <li><a href="#progressbar">Progress Bar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <div class="main-content">
+            <div class="main-content__inner">
+
+                <!--Getting Startd-->
+
+                <!--Introduction-->
+                <section id="introduction" class="container">
+                    <h3 class="section-title">Introduction</h3>
+                    <div class="section-description">
+                        <p><strong>Starterkit.css</strong> is a lightweight, responsive and modern CSS framework for faster and extensible development.</p>
+                        <p>This css starter kit provides basic styles for typography and elements, flexbox based responsive layout system, CSS components and utilities with best practice coding and
+                            consistent design language.</p>
+                    </div>
+                </section>
+
+                <!--Quick Start-->
+                <section id="quick-start" class="container">
+                    <h3 class="section-title">Quick Start</h3>
+                    <div class="section-description">
+                        <p>You can set up your web framework just under a minute. Just add this code to your web page for the basic template to take effect immediately.</p>
+                    </div>
+                    <div class="content-section">
+                        <div class="example-content">
+                            <pre>
+                                <code class="language-markup">
+                                    &lt;!DOCTYPE html&gt;
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Basic Template&lt;/title&gt;
+
+                                            &lt;meta charset="utf-8"&gt;
+                                            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+                                    <!-- CSS -->
+                                            &lt;link rel="stylesheet" href="assets/css/app.css"&gt;
+
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;h1>Hello, world!&lt;/h1&gt;
+
+                                    <!-- JS -->
+                                            &lt;script src="assets/js/app.js">&lt;/script&gt;
+                                        &lt;/body&gt;
+                                    &lt;/html&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Browser Support-->
+                <section id="browser-support" class="container">
+                    <h3 class="section-title">Browser Support</h3>
+                    <div class="section-description">
+                        This starter kit supports the latest, stable releases of all major browsers:
+                    </div>
+                    <div class="content-section">
+                        <div class="example-content">
+                            <ul class="browser-list">
+                                <li>Latest Chrome</li>
+                                <li>Latest Firefox</li>
+                                <li>Latest Safari</li>
+                                <li>Latest Opera</li>
+                                <li>Microsoft Edge</li>
+                                <li>Internet Explorer 11</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Element-->
+
+                <!--Buttons-->
+                <section id="buttons" class="container">
+                    <h3 class="section-title">Buttons</h3>
+                    <p class="section-description">
+                        Buttons are minimalistic, designed for instant and convenient customization.
+                    </p>
+                    <div class="content-section">
+                        <h6 class="section-title-secondary">Primary</h6>
+                        <div class="example-content">
+                            <div>
+                                <button class="button">Default</button>
+                                <a href="#" class="button">Button</a>
+                            </div>
+
+                            <pre>
+                                <code class="language-markup">&lt;button class="button"&gt;&lt;/button&gt;</code>
+                                <code class="language-markup">&lt;a href="#" class="button"&gt;&lt;/a&gt;</code>
+                            </pre>
+                        </div>
+
+                        <h6 class="section-title-secondary">Secondary</h6>
+                        <div class="example-content">
+                            <button class="button button-secondary">Default</button>
+                            <a href="#" class="button button-secondary">Button</a>
+
+                            <pre>
+                                <code class="language-markup">&lt;button class="button button-secondary"&gt;&lt;/button&gt;</code>
+                                <code class="language-markup">&lt;a href="#" class="button button-secondary"&gt;&lt;/a&gt;</code>
+                            </pre>
+                        </div>
+
+                        <h6 class="section-title-secondary">Rounded Corner</h6>
+                        <div class="example-content">
+                            <button class="button">Apple</button>
+                            <button class="button">Orange</button>
+                            <button class="button button-round">Banana</button>
+                            <button class="button button-round button-icon">
+                                <i class="fa fa-camera-retro"></i>
+                                Grapes
+                            </button>
+                            <button class="button button-default button-icon-circle button-icon">
+                                <i class="fa fa-camera-retro"></i>
+                            </button>
+                            <pre>
+                                <code class="language-markup">&lt;button class="button button-round button-icon"&gt;&lt;/button&gt;</code>
+                            </pre>
+                        </div>
+
+                        <h6 class="section-title-secondary">Button Colors</h6>
+                        <div class="example-content">
+                            <button class="button">Default</button>
+                            <button class="button button-secondary">Secondary</button>
+                            <button class="button button-info">Info</button>
+                            <button class="button button-success">Success</button>
+                            <button class="button button-danger">Danger</button>
+                            <button class="button button-warning">Warning</button>
+
+                            <pre>
+                                <code class="language-markup">&lt;button class="button"&gt;&lt;/button&gt;</code>
+                                <code class="language-markup">&lt;button class="button button-secondary"&gt;&lt;/button&gt;</code>
+                                <code class="language-markup">&lt;button class="button button-info"&gt;&lt;/button&gt;</code>
+                                <code class="language-markup">&lt;button class="button button-success"&gt;&lt;/button&gt;</code>
+                                <code class="language-markup">&lt;button class="button button-danger"&gt;&lt;/button&gt;</code>
+                                <code class="language-markup">&lt;button class="button button-warning"&gt;&lt;/button&gt;</code>
+                            </pre>
+                        </div>
+
+                        <h6 class="section-title-secondary">Sharp Edges</h6>
+                        <div class="example-content">
+                            <button class="button button-flat">Default</button>
+                            <button class="button button-success button-flat">Secondary</button>
+
+                            <pre>
+                                <code class="language-markup">&lt;button class="button button-flat"&gt;&lt;/button&gt;</code>
+                            </pre>
+                        </div>
+
+                        <h6 class="section-title-secondary">Ghost Button / Outline</h6>
+                        <div class="example-content">
+                            <button class="button button-border button-round">Round</button>
+                            <button class="button button-danger button-border button-round">Border</button>
+
+                            <pre>
+                                <code class="language-markup">&lt;button class="button button-border"&gt;&lt;/button&gt;</code>
+                            </pre>
+                        </div>
+
+                        <h6 class="section-title-secondary">Disabled</h6>
+                        <div class="example-content">
+                            <button class="button button-disabled">Telephone</button>
+                            <button class="button button-round button-disabled">Camera</button>
+                            <button class="button button-flat button-disabled">TV</button>
+
+                            <pre>
+                                <code class="language-markup">&lt;button class="button button-disabled"&gt;&lt;/button&gt;</code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Table-->
+                <section id="table" class="container">
+                    <h1 class="section-title">Tables</h1>
+                    <p class="section-description">
+                        Varieties of forms required different layouts of table. With the basic collection of table can saves your time.
+                    </p>
+
+                    <div class="content-section">
+                        <!--Basic Table-->
+                        <h6 class="section-title-secondary">Basic table</h6>
+                        <div class="example-content">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Address</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Diken</td>
+                                    <td>Ulak</td>
+                                    <td>Naya Bazaar</td>
+                                </tr>
+                                <tr>
+                                    <td>Kushal</td>
+                                    <td>Shrestha</td>
+                                    <td>Khusibun</td>
+                                </tr>
+                                <tr>
+                                    <td>Nirajan</td>
+                                    <td>Basnet</td>
+                                    <td>Patan</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;table&gt;
+                                            ...
+                                        &lt;/table&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--Bordered-->
+                        <h6 class="section-title-secondary">Bordered</h6>
+                        <div class="example-content">
+                            <table class="bordered">
+                                <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Address</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Diken</td>
+                                    <td>Ulak</td>
+                                    <td>Naya Bazaar</td>
+                                </tr>
+                                <tr>
+                                    <td>Kushal</td>
+                                    <td>Shrestha</td>
+                                    <td>Khusibun</td>
+                                </tr>
+                                <tr>
+                                    <td>Nirajan</td>
+                                    <td>Basnet</td>
+                                    <td>Patan</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;table class="bordered"&gt;
+                                            ...
+                                        &lt;/table&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--Striped-->
+                        <h6 class="section-title-secondary">Striped</h6>
+                        <div class="example-content">
+                            <table class="striped">
+                                <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Address</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Diken</td>
+                                    <td>Ulak</td>
+                                    <td>Naya Bazaar</td>
+                                </tr>
+                                <tr>
+                                    <td>Kushal</td>
+                                    <td>Shrestha</td>
+                                    <td>Khusibun</td>
+                                </tr>
+                                <tr>
+                                    <td>Nirajan</td>
+                                    <td>Basnet</td>
+                                    <td>Patan</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;table class="striped"&gt;
+                                            ...
+                                        &lt;/table&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--Combine-->
+                        <h6 class="section-title-secondary">Combined</h6>
+                        <div class="example-content">
+                            <table class="bordered striped">
+                                <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Address</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Diken</td>
+                                    <td>Ulak</td>
+                                    <td>Naya Bazaar</td>
+                                </tr>
+                                <tr>
+                                    <td>Kushal</td>
+                                    <td>Shrestha</td>
+                                    <td>Khusibun</td>
+                                </tr>
+                                <tr>
+                                    <td>Nirajan</td>
+                                    <td>Basnet</td>
+                                    <td>Patan</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;table class="bordered striped"&gt;
+                                            ...
+                                        &lt;/table&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Layout-->
+
+                <!--Grid-->
+                <section id="grid" class="container">
+                    <h1 class="section-title">Flexbox Grid Responsive</h1>
+                    <div class="content-section">
+                        <!--Responsive-->
+                        <div class="page-section">
+                            <h6 class="section-title-secondary">Responsive</h6>
+                            <p class="section-description">Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm, md &amp; lg viewport
+                                widths.</p>
+                            <div class="example-content">
+                                <div class="row">
+                                    <div class="col-xsmall-12 col-small-3 col-medium-2 col-large-1">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall-6 col-small-6 col-medium-8 col-large-10">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall-6 col-small-3 col-medium-2 col-large-1">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-12 col-small-3 col-medium-2 col-large-1">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall-12 col-small-9 col-medium-10 col-large-11">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-10 col-small-6 col-medium-8 col-large-10">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall-2 col-small-6 col-medium-4 col-large-2">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="col-xsmall-12 col-small-8 col-medium-6 col-large-4"&gt;
+                                                &lt;div class="box"&gt;Responsive&lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Fluid-->
+                        <div class="page-section"><br>
+                            <h6 class="section-title-secondary">Fluid</h6>
+                            <p class="section-description">Percent based widths allow fluid resizing of columns and rows.</p>
+                            <div class="example-content">
+                                <div class="row">
+                                    <div class="col-xsmall-12">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-1">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall-11">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-2">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall-10">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-3">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall-9">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-4">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall-8">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-5">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall-7">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-6">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall-6">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <pre>
+                                    <code class="language-css">.col-xsmall-6 { flex-basis: 50%; }</code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Syntax-->
+                        <div class="page-section">
+                            <h6 class="section-title-secondary">Simple Syntax</h6>
+                            <p class="section-description">All you need to remember is row, column, content.</p>
+                            <div class="example-content">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="col-xsmall-12"&gt;
+                                                &lt;div class="box"&gt;12&lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Offsets-->
+                        <div class="page-section">
+                            <h6 class="section-title-secondary">Offsets</h6>
+                            <p class="section-description">Offset a column</p>
+                            <div class="example-content">
+                                <div class="row">
+                                    <div class="col-xsmall-offset-11 col-xsmall-1">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-offset-10 col-xsmall-2">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-offset-9 col-xsmall-3">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-offset-8 col-xsmall-4">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-offset-7 col-xsmall-5">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-offset-6 col-xsmall-6">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-offset-5 col-xsmall-7">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-offset-4 col-xsmall-8">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-offset-3 col-xsmall-9">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-offset-2 col-xsmall-10">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall-offset-1 col-xsmall-11">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="col-xsmall-offset-3 col-xsmall-9"&gt;
+                                                &lt;div class="box"&gt;offset&lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Auto-->
+                        <div class="page-section">
+                            <h6 class="section-title-secondary">Auto Width</h6>
+                            <p class="section-description">Add any number of auto sizing columns to a row. Let the grid figure it out.</p>
+                            <div class="example-content">
+                                <div class="row">
+                                    <div class="col-xsmall">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xsmall">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall">
+                                        <div class="box-row"></div>
+                                    </div>
+                                    <div class="col-xsmall">
+                                        <div class="box-row"></div>
+                                    </div>
+                                </div>
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="col-xsmall"&gt;
+                                                &lt;div class="box"&gt;auto&lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Nested-->
+                        <div class="page-section">
+                            <h6 class="section-title-secondary">Nested Grids</h6>
+                            <p class="section-description">Nest grids inside grids inside grids.</p>
+                            <div class="example-content">
+                                <div class="row">
+                                    <div class="col-xsmall-7">
+                                        <div class="box box-container">
+                                            <div class="row">
+                                                <div class="col-xsmall-9">
+                                                    <div class="box-first box-container">
+                                                        <div class="row">
+                                                            <div class="col-xsmall-4">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                            <div class="col-xsmall-8">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xsmall-3">
+                                                    <div class="box-first box-container">
+                                                        <div class="row">
+                                                            <div class="col-xsmall">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xsmall-5">
+                                        <div class="box box-container">
+                                            <div class="row">
+                                                <div class="col-xsmall-12">
+                                                    <div class="box-first box-container">
+                                                        <div class="row">
+                                                            <div class="col-xsmall-6">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                            <div class="col-xsmall-6">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="col-xsmall"&gt;
+                                                &lt;div class="box"&gt;
+                                                    &lt;div class="row"&gt;
+                                                        &lt;div class="col-xsmall"&gt;
+                                                            &lt;div class="box"&gt;auto&lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Alignment-->
+                        <div class="page-section">
+                            <h6 class="section-title-secondary">Alignment</h6>
+                            <p class="section-description">Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column</p>
+                            <div class="example-content">
+                                <div class="list">
+                                    <h3><code class="demo">.start-</code></h3>
+                                    <div class="row">
+                                        <div class="col-xsmall-12">
+                                            <div class="box box-container">
+                                                <div class="row start-xsmall">
+                                                    <div class="col-xsmall-6">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <pre><code class="language-markup">&lt;div class="row start-xsmall"&gt;
+    &lt;div class="col-xsmall-6"&gt;
+        &lt;div class="box"&gt;
+            start
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div class="list">
+                                    <h3><code class="demo">.center-</code></h3>
+                                    <div class="row">
+                                        <div class="col-xsmall-12">
+                                            <div class="box box-container">
+                                                <div class="row center-xsmall">
+                                                    <div class="col-xsmall-6">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <pre><code class="language-markup">&lt;div class="row center-xsmall"&gt;
+    &lt;div class="col-xsmall-6"&gt;
+        &lt;div class="box"&gt;
+            start
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div class="list">
+                                    <h3><code class="demo">.end-</code></h3>
+                                    <div class="row">
+                                        <div class="col-xsmall-12">
+                                            <div class="box box-container">
+                                                <div class="row end-xsmall">
+                                                    <div class="col-xsmall-6">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <pre><code class="language-markup">&lt;div class="row end-xsmall"&gt;
+    &lt;div class="col-xsmall-6"&gt;
+        &lt;div class="box"&gt;
+            end
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div class="list">
+                                    <p>Here is an example of using the modifiers in conjunction to acheive different alignment at different viewport sizes.</p>
+                                    <div class="row">
+                                        <div class="col-xsmall-12">
+                                            <div class="box box-container">
+                                                <div class="row center-xsmall end-small start-large">
+                                                    <div class="col-xsmall-6">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    Example
+                                    <pre>
+                                        <code class="language-markup">
+                                            &lt;div class="row center-xsmall end-small start-large"&gt;
+                                                &lt;div class="col-xsmall-6"&gt;
+                                                    &lt;div class="box"&gt;
+                                                        All together now
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="list">
+                                    <h3><code class="demo">.top-</code></h3>
+                                    <div class="row top-xsmall">
+                                        <div class="col-xsmall-6">
+                                            <div class="box-large"></div>
+                                        </div>
+                                        <div class="col-xsmall-6">
+                                            <div class="box"></div>
+                                        </div>
+                                    </div>
+                                    <pre><code class="language-markup">&lt;div class="row top-xsmall"&gt;
+    &lt;div class="col-xsmall-6"&gt;
+        &lt;div class="box"&gt;
+            top
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div class="list">
+                                    <h3><code class="demo">.middle-</code></h3>
+                                    <div class="row middle-xsmall">
+                                        <div class="col-xsmall-6">
+                                            <div class="box-large"></div>
+                                        </div>
+                                        <div class="col-xsmall-6">
+                                            <div class="box"></div>
+                                        </div>
+                                    </div>
+                                    <pre><code class="language-markup">&lt;div class="row middle-xsmall"&gt;
+    &lt;div class="col-xsmall-6"&gt;
+        &lt;div class="box"&gt;
+            center
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div class="list">
+                                    <h3><code class="demo">.bottom-</code></h3>
+                                    <div class="row bottom-xsmall">
+                                        <div class="col-xsmall-6">
+                                            <div class="box-large"></div>
+                                        </div>
+                                        <div class="col-xsmall-6">
+                                            <div class="box"></div>
+                                        </div>
+                                    </div>
+                                    <pre><code class="language-markup">&lt;div class="row bottom-xsmall"&gt;
+    &lt;div class="col-xsmall-6"&gt;
+        &lt;div class="box"&gt;
+            bottom
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Distribution-->
+                        <div class="page-section">
+                            <h6 class="section-title-secondary">Distribution</h6>
+                            <p class="section-description">Add classes to distribute the contents of a row or column.</p>
+                            <div class="example-content">
+                                <div class="list">
+                                    <h3><code class="demo">.around-</code></h3>
+                                    <div class="row">
+                                        <div class="col-xsmall-12">
+                                            <div class="box box-container">
+                                                <div class="row around-xsmall">
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <pre>
+                                        <code class="language-markup">
+                                            &lt;div class="row around-xsmall"&gt;
+                                                &lt;div class="col-xsmall-2"&gt;
+                                                    &lt;div class="box"&gt;
+                                                        around
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-xsmall-2"&gt;
+                                                    &lt;div class="box"&gt;
+                                                        around
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-xsmall-2"&gt;
+                                                    &lt;div class="box"&gt;
+                                                        around
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="list">
+                                    <h3><code class="demo">.between-</code></h3>
+                                    <div class="row">
+                                        <div class="col-xsmall-12">
+                                            <div class="box box-container">
+                                                <div class="row between-xsmall">
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <pre><code class="language-markup">&lt;div class="row between-xsmall"&gt;
+    &lt;div class="col-xsmall-2"&gt;
+        &lt;div class="box"&gt;
+            between
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xsmall-2"&gt;
+        &lt;div class="box"&gt;
+            between
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xsmall-2"&gt;
+        &lt;div class="box"&gt;
+            between
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Reordering-->
+                        <div class="page-section">
+                            <h6 class="section-title-secondary">Reordering</h6>
+                            <p class="section-description">Add classes to reorder columns.</p>
+                            <div class="example-content">
+                                <div class="list">
+                                    <h3><code class="demo">.first-</code></h3>
+                                    <div class="row">
+                                        <div class="col-xsmall-12">
+                                            <div class="box box-container">
+                                                <div class="row">
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-first">1</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-first">2</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-first">3</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-first">4</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-first">5</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2 first-xsmall">
+                                                        <div class="box-nested">6</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <pre><code class="language-markup">&lt;div class="row"&gt;
+    &lt;div class="col-xsmall-2"&gt;
+        &lt;div class="box"&gt;
+            1
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xsmall-2"&gt;
+        &lt;div class="box"&gt;
+            2
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xsmall-2 first-xsmall"&gt;
+        &lt;div class="box"&gt;
+            3
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div class="list">
+                                    <h3><code class="demo">.last-</code></h3>
+                                    <div class="row">
+                                        <div class="col-xsmall-12">
+                                            <div class="box box-container">
+                                                <div class="row">
+                                                    <div class="col-xsmall-2 last-xsmall">
+                                                        <div class="box-nested">1</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-first">2</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-first">3</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-first">4</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-first">5</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-first">6</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <pre><code class="language-markup">&lt;div class="row"&gt;
+    &lt;div class="col-xsmall-2 last-xsmall"&gt;
+        &lt;div class="box"&gt;
+            1
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xsmall-2"&gt;
+        &lt;div class="box"&gt;
+            2
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xsmall-2"&gt;
+        &lt;div class="box"&gt;
+            3
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Reversing-->
+                        <div class="page-section">
+                            <h6 class="section-title-secondary">Reversing</h6>
+                            <div class="example-content">
+                                <div class="list">
+                                    <h3><code class="demo">.reverse</code></h3>
+                                    <div class="row">
+                                        <div class="col-xsmall-12">
+                                            <div class="box box-container">
+                                                <div class="row reverse">
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested">1</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested">2</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested">3</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested">4</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested">5</div>
+                                                    </div>
+                                                    <div class="col-xsmall-2">
+                                                        <div class="box-nested">6</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <pre><code class="language-markup">&lt;div class="row reverse"&gt;
+    &lt;div class="col-xsmall-2"&gt;
+        &lt;div class="box"&gt;
+            1
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xsmall-2"&gt;
+        &lt;div class="box"&gt;
+            2
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xsmall-2"&gt;
+        &lt;div class="box"&gt;
+            3
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Components-->
+
+                <!--Alerts-->
+                <section id="alerts" class="container">
+                    <h1 class="section-title">Alerts & Notification</h1>
+                    <p class="section-description">
+                        Just checkout the awesome UI of Alerts and Notifications you will ever get..
+                    </p>
+                    <div class="content-section">
+                        <!--Basic Tooltip-->
+                        <h6 class="section-title-secondary">Basic Alerts</h6>
+                        <div class="example-content">
+                            <div class="alert alert-custom">
+                                <div class="alert-container">
+                                    <div class="alert-icon">
+                                        <i class="fa fa-warning"></i>
+                                    </div>
+                                    <button type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
+                                        <span>clear</span>
+                                    </button>
+                                    <b class="alert-info">Custom alert:</b> You've got some error prepare for it...
+                                </div>
+                            </div>
+                            <div class="alert alert-info">
+                                <div class="alert-container">
+                                    <div class="alert-icon">
+                                        <i class="fa fa-info-circle"></i>
+                                    </div>
+                                    <button type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
+                                        <span>clear</span>
+                                    </button>
+                                    <b class="alert-info">Info alert:</b> You've got some friends nearby, stop looking at your phone and find them...
+                                </div>
+                            </div>
+                            <div class="alert alert-success">
+                                <div class="alert-container">
+                                    <div class="alert-icon">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <button type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
+                                        <span>clear</span>
+                                    </button>
+                                    <b class="alert-info">Success alert:</b> Yuhuuu! You've got your $11.99 album from The Weekend
+                                </div>
+                            </div>
+                            <div class="alert alert-warning">
+                                <div class="alert-container">
+                                    <div class="alert-icon">
+                                        <i class="fa fa-warning"></i>
+                                    </div>
+                                    <button type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
+                                        <span>clear</span>
+                                    </button>
+                                    <b class="alert-info">Warning alert:</b> Hey, it looks like you still have the "copyright © 2015" in your footer. Please update it!
+                                </div>
+                            </div>
+                            <div class="alert alert-danger">
+                                <div class="alert-container">
+                                    <div class="alert-icon">
+                                        <i class="fa fa-info-circle"></i>
+                                    </div>
+                                    <button type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
+                                        <span>clear</span>
+                                    </button>
+                                    <b class="alert-info">Danger alert:</b> Damn man! You screwed up the server this time. You should find a good excuse for your Boss...
+                                </div>
+                            </div>
+                            <div class="">
+                            <pre>
+                                <code class="language-markup">
+                                 &lt;div class="alert alert-custom"&gt;
+                                     &lt;div class="alert-container"&gt;
+                                         &lt;div class="alert-icon"&gt;
+                                             &lt;i class="fa fa-warning"&gt; &lt;/i&gt;
+                                         &lt;/div&gt;
+                                         &lt;button type="button" class="close-icon" data-dismiss="alert" aria-label="Close"&gt;
+                                             &lt;span&gt;clear &lt;/span&gt;
+                                         &lt;/button&gt;
+                                         &lt;b class="alert-info"&gt;Custom alert: &lt;/b&gt; You've got some error prepare for it...
+                                     &lt;/div&gt;
+                                 &lt;/div&gt;
+                                </code>
+                            </pre>
+                                <p class="demo-note">Add other classes as <strong>alert-info</strong>, <strong>alert-success</strong>, <strong>alert-warning</strong>, <strong>alert-danger</strong>...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Dropdown-->
+                <section id="dropdown" class="container">
+                    <h1 class="section-title">Dropdown</h1>
+                    <p class="section-description">
+                        Animated custom dropdown that is so awesome to use.
+                    </p>
+                    <div class="content-section">
+
+                        <!--Simple Dropdown-->
+                        <h6 class="section-title-secondary">Simple Dropdown</h6>
+                        <div class="example-content">
+                            <div class="plain-dropdown">
+                                <button class="button button-warning" type="button" data-toggle="plain-dropdown">
+                                    Dropdown
+                                    <span class="caret"></span>
+                                </button>
+                                <ul id="plain-dropdown-menu" class="closed">
+                                    <li><a>First item</a></li>
+                                    <li><a href="#">Second item</a></li>
+                                    <li><a href="#">Third item</a></li>
+                                    <li><a href="#">Fourth item</a></li>
+                                    <li><a href="#">Fifth item</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="plain-dropdown"&gt;
+                                            &lt;button class="button button-warning" type="button" data-toggle="plain-dropdown"&gt;
+                                                Dropdown
+                                                &lt;span class="caret"&gt;&lt;/span&gt;
+                                            &lt;/button&gt;
+                                            &lt;ul id="plain-dropdown-menu" class="closed"&gt;
+                                                &lt;li&gt;&lt;a &gt;First item&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;Second item&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;Third item&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;Fourth item&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;Fifth item&lt;/a&gt;&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--Custom Select Dropdown-->
+                        <h6 class="section-title-secondary">Custom Select Dropdown</h6>
+                        <div class="example-content">
+                            <div class="select-dropdown js-select-dropdown">
+                                <input type="hidden" name="country" id="country" class="js-select-dropdown__input">
+                                <span class="button button-secondary js-select-dropdown__current">Select Country</span>
+                                <ul class="select-dropdown__list">
+                                    <li class="select-dropdown__item" data-select-dropdown-value="nepal">Nepal</li>
+                                    <li class="select-dropdown__item" data-select-dropdown-value="australia">Australia</li>
+                                    <li class="select-dropdown__item" data-select-dropdown-value="united states">United States</li>
+                                    <li class="select-dropdown__item" data-select-dropdown-value="england">England</li>
+                                    <li class="select-dropdown__item" data-select-dropdown-value="brazil">Brazil</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="select-dropdown js-select-dropdown"&gt;
+                                            &lt;input type="hidden" name="country" id="country" class="js-select-dropdown__input"&gt;
+                                            &lt;span class="button button-secondary js-select-dropdown__current"&gt;Select Country&lt;/span&gt;
+                                            &lt;ul class="select-dropdown__list"&gt;
+                                                &lt;li class="dropdown__item" data-select-dropdown-value="nepal"&gt;Nepal&lt;/li&gt;
+                                                &lt;li class="select-dropdown__item" data-select-dropdown-value="australia"&gt;Australia&lt;/li&gt;
+                                                &lt;li class="select-dropdown__item" data-select-dropdown-value="united states"&gt;United States&lt;/li&gt;
+                                                &lt;li class="select-dropdown__item" data-select-dropdown-value="england"&gt;England&lt;/li&gt;
+                                                &lt;li class="select-dropdown__item" data-select-dropdown-value="brazil"&gt;Brazil&lt;/li&gt;
+                                            &lt;/ul>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--Inputs-->
+                <section id="inputs" class="container">
+                    <h1 class="section-title">Forms</h1>
+                    <p class="section-description">
+                        Varieties of Forms elements are available where you can do all sorts of things with them and are ideal building material for your awesome projects!
+                    </p>
+                    <div class="content-section">
+                        <!--Basic From-->
+                        <h6 class="section-title-secondary">Basic Form</h6>
+                        <div class="example-content">
+                            <form method="post" action="" class="form">
+                                <div class="form-item">
+                                    <label>Email</label>
+                                    <input type="email" name="email" class="w50"/>
+                                </div>
+                                <div class="form-item">
+                                    <label>Country</label>
+                                    <div class="select w50">
+                                        <select>
+                                            <option value="">---</option>
+                                        </select>
+                                        <div class="select__arrow"></div>
+                                    </div>
+
+                                </div>
+                                <div class="form-item">
+                                    <label class="control control--checkbox">Checkbox
+                                        <input type="checkbox">
+                                        <span class="control__indicator"></span>
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <label class="control control--radio">Radio
+                                        <input type="checkbox" checked="checked">
+                                        <span class="control__indicator"></span>
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <textarea rows="6"></textarea>
+                                </div>
+                                <div class="form-item form-buttons">
+                                    <button class="button">Log in</button>
+                                    <button class="button button-secondary button-border">Cancel</button>
+                                </div>
+                            </form>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="grid grid--full"&gt;
+                                            &lt;div class="grid-cell"&gt;
+                                                &lt;div class="grid-demo-box"&gt;Content 1&lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;form method="post" action="" class="form"&gt;
+                                            &lt;div class="form-item"&gt;
+                                                &lt;label&gt;Email&lt;/label&gt;
+                                                &lt;input type="email" name="email" class="w50"/&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="form-item"&gt;
+                                                &lt;label>Country&lt;/label&gt;
+                                                &lt;select class="w50"&gt;
+                                                    &lt;option value=""&gt;---&lt;/option&gt;
+                                                &lt;/select&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="form-item"&gt;
+                                                &lt;label class="checkbox"&gt;&lt;input type="checkbox"&gt; Check me&lt;/label&gt;
+                                                &lt;label class="checkbox"&gt;&lt;input type="radio"&gt; Radio me&lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="form-item"&gt;
+                                                &lt;textarea rows="6"&gt;&lt;/textarea&gt;
+                                            &lt;/div>
+                                            &lt;div class="form-item form-buttons"&gt;
+                                                &lt;button class="button"&gt;Log in&lt;/button&gt;
+                                                &lt;button class="button button-secondary button-border"&gt;Cancel&lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/form&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--Basic-input-->
+                        <h6 class="section-title-secondary">Basic Input</h6>
+                        <div class="example-content">
+                            <div class="form-item">
+                                <label>Location</label>
+                                <input type="text"/>
+                                <div class="desc">I guess this is a funny text</div>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="form-item"&gt;
+                                            &lt;label&gt;Email&lt;/label&gt;
+                                            &lt;input type="text"&gt;
+                                            &lt;div class="desc"&gt;I guess this is a funny text&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--With-Required-->
+                        <h6 class="section-title-secondary">With Required</h6>
+                        <div class="example-content">
+                            <div class="grid grid--cols-2 grid--gutters">
+                                <div class="grid-cell">
+                                    <div class="form-item">
+                                        <label>Location <span class="required">*</span></label>
+                                        <input type="text"/>
+                                    </div>
+                                </div>
+                                <div class="grid-cell">
+                                    <div class="form-item">
+                                        <label>Location <span class="desc">You there</span></label>
+                                        <input type="text"/>
+                                        <div class="desc">I guess now I understand the thing</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="grid grid--cols-2 grid--gutters"&gt;
+                                            &lt;div class="grid-cell"&gt;
+                                                &lt;div class="form-item"&gt;
+                                                    &lt;label>Location &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;input type="text" /&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="grid-cell"&gt;
+                                                &lt;div class="form-item"&gt;
+                                                    &lt;label&gt;Location &lt;span class="desc">You there&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;input type="text" /&gt;
+                                                    &lt;div class="desc"&gt;I guess now I understand the thing&lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                                <p class="demo-note">Add classes <strong>required</strong> and <strong>desc</strong> for the required text</p>
+                            </div>
+                        </div>
+
+                        <!--Checkbox-->
+                        <h6 class="section-title-secondary">Checkbox</h6>
+                        <div class="example-content">
+                            <div class="form-item-group">
+                                <div class="form-item">
+                                    <label class="control control--checkbox">First checkbox
+                                        <input type="checkbox" checked="checked">
+                                        <span class="control__indicator"></span>
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <label class="control control--checkbox">Second checkbox
+                                        <input type="checkbox">
+                                        <span class="control__indicator"></span>
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <label class="control control--checkbox">Disabled
+                                        <input type="checkbox" disabled="disabled">
+                                        <span class="control__indicator"></span>
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <label class="control control--checkbox">Disabled &amp; checked
+                                        <input type="checkbox" disabled="disabled" checked="checked">
+                                        <span class="control__indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="form-item-group"&gt;
+                                            &lt;div class="form-item"&gt;
+                                                &lt;label class="control control--checkbox"&gt;First checkbox
+                                                    &lt;input type="checkbox" checked="checked"&gt;
+                                                    &lt;span class="control__indicator">&lt;/span&gt;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--Radio-Buttons-->
+                        <h6 class="section-title-secondary">Radio Buttons</h6>
+                        <div class="example-content">
+                            <div class="form-item-group">
+                                <div class="form-item">
+                                    <label class="control control--radio">First Radio
+                                        <input type="checkbox" checked="checked">
+                                        <span class="control__indicator"></span>
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <label class="control control--radio">Second Radio
+                                        <input type="checkbox">
+                                        <span class="control__indicator"></span>
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <label class="control control--radio">Disabled
+                                        <input type="checkbox" disabled="disabled">
+                                        <span class="control__indicator"></span>
+                                    </label>
+                                </div>
+                                <div class="form-item">
+                                    <label class="control control--radio">Disabled &amp; checked
+                                        <input type="checkbox" disabled="disabled" checked="checked">
+                                        <span class="control__indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="form-item-group"&gt;
+                                            &lt;div class="form-item"&gt;
+                                                &lt;label class="control control--radio"&gt;First Radio
+                                                    &lt;input type="checkbox" checked="checked"&gt;
+                                                    &lt;span class="control__indicator">&lt;/span&gt;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--Select-boxes-->
+                        <h6 class="section-title-secondary">Select Box</h6>
+                        <div class="example-content">
+                            <div class="form-item-group w50">
+                                <div class="form-item">
+                                    <div class="select">
+                                        <select>
+                                            <option>First select</option>
+                                            <option>Option</option>
+                                            <option>Option</option>
+                                        </select>
+                                        <div class="select__arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <div class="select">
+                                        <select>
+                                            <option>Second select</option>
+                                            <option>Option</option>
+                                            <option>Option</option>
+                                        </select>
+                                        <div class="select__arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <div class="select">
+                                        <select disabled="disabled">
+                                            <option>Disabled</option>
+                                            <option>Option</option>
+                                            <option>Option</option>
+                                        </select>
+                                        <div class="select__arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;div class="select"&gt;
+                                            &lt;select&gt;
+                                                &lt;option&gt;First select&lt;/option&gt;
+                                                &lt;option&gt;Option&lt;/option&gt;
+                                                &lt;option&gt;Option&lt;/option&gt;
+                                            &lt;/select&gt;
+                                            &lt;div class="select__arrow"&gt;&lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--States-->
+                        <h6 class="section-title-secondary">States</h6>
+                        <div class="example-content">
+                            <form action="" class="form">
+                                <div class="form-item-group w50">
+                                    <div class="form-item">
+                                        <label>Name <span class="success">Success field</span></label>
+                                        <input type="text" class="success"/>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;form action="" class="form"&gt;
+                                            &lt;div class="form-item-group w50"&gt;
+                                                &lt;div class="form-item"&gt;
+                                                    &lt;label&gt;Name &lt;span class="success"&gt;Success field&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;input type="text" class="success"&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/form&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <div class="example-content">
+                            <form action="" class="form">
+                                <div class="form-item-group w50">
+                                    <div class="form-item">
+                                        <label>Age <span class="error">Write your correct age</span></label>
+                                        <input type="text" class="error"/>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;form action="" class="form"&gt;
+                                            &lt;div class="form-item-group w50"&gt;
+                                                &lt;div class="form-item"&gt;
+                                                    &lt;label&gt;Age &lt;span class="error"&gt;Write your correct age&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;input type="text" class="error"&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/form&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--Descriptions-->
+                        <h6 class="section-title-secondary">Descriptions</h6>
+                        <div class="example-content">
+                            <form action="" class="form">
+                                <div class="form-item-group w50">
+                                    <div class="form-item">
+                                        <label>Name <span class="desc">You are damn right..</span></label>
+                                        <input type="text" name="user-name"/>
+                                    </div>
+                                    <div class="form-item">
+                                        <label>Email</label>
+                                        <input type="text"/>
+                                        <div class="desc">Enter your email</div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;form action="" class="form"&gt;
+                                            &lt;div class="form-item-group w50"&gt;
+                                                &lt;div class="form-item"&gt;
+                                                    &lt;label&gt;Name &lt;span class="desc"&gt;You are damn right..&lt;/span&gt;&lt;/label&gt;
+                                                    &lt;input type="text" name="user-name"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="form-item"&gt;
+                                                    &lt;label&gt;Email&lt;/label&gt;
+                                                    &lt;input type="text" name="user-name"&gt;
+                                                    &lt;div class="desc"&gt;Enter your email&lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/form&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Tooltips-->
+                <section id="tooltips" class="container">
+                    <h1 class="section-title">Tooltips</h1>
+                    <p class="section-description">
+                        Just checkout the awesome tooltips you will ever get..
+                    </p>
+                    <div class="content-section tooltip-section">
+                        <!--Basic Tooltip-->
+                        <h6 class="section-title-secondary">Basic Tooltip</h6>
+                        <div class="example-content">
+                            <span data-tooltip="You are awesome">Just hover me!!</span>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;span data-tooltip="You are awesome">Just hover me!!&lt;/span&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--Positioning-->
+                        <h6 class="section-title-secondary">Positioning</h6>
+                        <div class="example-content">
+                            <ul>
+                                <li><span data-tooltip="Top">Top</span></li>
+                                <li><span data-tooltip="Right" data-tooltip-conf="right">Right</span></li>
+                                <li><span data-tooltip="Bottom" data-tooltip-conf="bottom">Bottom</span></li>
+                                <li><span data-tooltip="Left" data-tooltip-conf="left">Left</span></li>
+                            </ul>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;span data-tooltip="Right" data-tooltip-conf="right">Right&lt;/span&gt;
+                                    </code>
+                                </pre>
+                                <p class="demo-note">Add other data attribute as <strong>data-tooltip-conf="left"</strong>, <strong>data-tooltip-conf="top"</strong>,
+                                    <strong>data-tooltip-conf="bottom"</strong></p>
+                            </div>
+                        </div>
+
+                        <!--Types-->
+                        <h6 class="section-title-secondary">Types</h6>
+                        <div class="example-content">
+                            <ul>
+                                <li>
+                                    <span data-tooltip="Invert" data-tooltip-conf="invert bottom">Invert</span>
+                                </li>
+                                <li>
+                                    <span data-tooltip="Success" data-tooltip-conf="success">Success</span>
+                                </li>
+                                <li>
+                                    <span data-tooltip="Info" data-tooltip-conf="info">Info</span>
+                                </li>
+                                <li>
+                                    <span data-tooltip="Warning" data-tooltip-conf="warning left">Warning</span>
+                                </li>
+                                <li>
+                                    <span data-tooltip="Danger" data-tooltip-conf="danger">Danger</span>
+                                </li>
+                            </ul>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;span data-tooltip="Invert" data-tooltip-conf="invert bottom">Invert&lt;/span&gt;
+                                    </code>
+                                </pre>
+                                <p class="demo-note">Add other data attribute as <strong>data-tooltip-conf="success"</strong>, <strong>data-tooltip-conf="info"</strong>, <strong>data-tooltip-conf="warning
+                                    left"</strong></p>
+                            </div>
+                        </div>
+
+                        <!--Features-->
+                        <h6 class="section-title-secondary">Features</h6>
+                        <div class="example-content">
+                            <ul>
+                                <li>
+                                    <span data-tooltip="Delay" data-tooltip-conf="delay">Delay</span>
+                                </li>
+                                <li>
+                                    <span data-tooltip="No Fading" data-tooltip-conf="no-fading">No fading</span>
+                                </li>
+                                <li>
+                                    <span data-tooltip="Shadow" data-tooltip-conf="shadow">Shadow</span>
+                                </li>
+                                <li>
+                                    <span data-tooltip="A pure CSS Tooltip library. Super easy to use, No JavaScript required." data-tooltip-conf="multiline">Multiline</span>
+                                </li>
+                                <li>
+                                    <span data-tooltip="No arrow" data-tooltip-conf="no-arrow">No arrow</span>
+                                </li>
+                                <li>
+                                    <span data-tooltip="Square" data-tooltip-conf="square">Square</span>
+                                </li>
+                            </ul>
+                            <div class="">
+                                <pre>
+                                    <code class="language-markup">
+                                        &lt;span data-tooltip="Delay" data-tooltip-conf="delay">Delay&lt;/span&gt;
+                                    </code>
+                                </pre>
+                                <p class="demo-note">Add other data attribute as <strong>data-tooltip-conf="no-fading"</strong>, <strong>data-tooltip-conf="shadow"</strong>, <strong>data-tooltip-conf="multiline"</strong>,
+                                    <strong>data-tooltip-conf="no-arrow"</strong>, <strong>data-tooltip-conf="square"</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Utilities-->
+                <section id="utilities" class="container">
+                    <h1 class="section-title">Utilities</h1>
+                    <p class="section-description">
+                        For the easy and fast workflow here are few helpers and utilities classes..
+                    </p>
+                    <div class="content-section utilities-section">
+                        <!--Display-->
+                        <div id="display">
+                            <h6 class="section-title-secondary">Display</h6>
+                            <div class="example-content">
+                                <pre>
+                                    <code class="language-markup">
+                                        <!-- display: block; -->
+                                        &lt;div class="block"&gt;&lt;/div&gt;
+                                        <!-- display: inline; -->
+                                        &lt;div class="inline"&gt;&lt;/div&gt;
+                                        <!-- display: inline-block; -->
+                                        &lt;div class="inline-block"&gt;&lt;/div&gt;
+                                        <!-- display: flex; -->
+                                        &lt;div class="flex"&gt;&lt;/div&gt;
+                                        <!-- display: inline-flex; -->
+                                        &lt;div class="inline-flex"&gt;&lt;/div&gt;
+                                        <!-- display: none; -->
+                                        &lt;div class="hide"&gt;&lt;/div&gt;
+                                        <!-- visibility: visible; -->
+                                        &lt;div class="visible"&gt;&lt;/div&gt;
+                                        <!-- visibility: hidden; -->
+                                        &lt;div class="invisible"&gt;&lt;/div&gt;
+                                        <!-- hide text contents -->
+                                        &lt;div class="text-hide"&gt;&lt;/div&gt;
+                                        <!-- assistive text for screen reader -->
+                                        &lt;div class="text-assistive"&gt;&lt;/div&gt;
+                                    </code>
+                                    </pre>
+                            </div>
+                        </div>
+
+                        <!--Position-->
+                        <div id="position">
+                            <h6 class="section-title-secondary">Position</h6>
+                            <div class="example-content">
+                                <div class="">
+                                    <pre>
+                                        <code class="language-markup">
+                                            <!-- clear float -->
+                                            &lt;div class="clearfix"&gt;&lt;/div&gt;
+                                            <!-- float: left and right -->
+                                            &lt;div class="float-left"&gt;&lt;/div&gt;
+                                            &lt;div class="float-right"&gt;/div&gt;
+                                            <!-- position: relative, absolute and fixed -->
+                                            &lt;div class="rel"&gt;&lt;/div&gt;
+                                            &lt;div class="abs"&gt;&lt;/div&gt;
+                                            &lt;div class="fixed"&gt;&lt;/div&gt;
+                                            <!-- centered block -->
+                                            &lt;div class="centered"&gt;&lt;/div&gt;
+                                            <!-- margin: 10px and 5px in 4 directions. mt-10 = margin-top: 10px; -->
+                                            &lt;div class="mt-10"&gt;&lt;/div&gt;
+                                            &lt;div class="mt-5"&gt;&lt;/div&gt;
+                                            <!-- padding: 10px and 5px in 4 directions. pt-10 = padding-top: 10px; -->
+                                            &lt;div class="pt-10"&gt;&lt;/div&gt;
+                                            &lt;div class="pt-5"&gt;&lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Text-->
+                        <div id="text">
+                            <h6 class="section-title-secondary">Text</h6>
+                            <div class="example-content">
+                                <div class="">
+                                    <pre>
+                                        <code class="language-markup">
+                                            <!-- left-aligned text -->
+                                            &lt;div class="text-left"&gt;&lt;/div&gt;
+                                            <!-- center-aligned text -->
+                                            &lt;div class="text-center"&gt;&lt;/div&gt;
+                                            <!-- right-aligned text -->
+                                            &lt;div class="text-right"&gt;&lt;/div&gt;
+                                            <!-- justified text -->
+                                            &lt;div class="text-justify"&gt;&lt;/div&gt;
+
+                                            <!-- Lowercased text -->
+                                            &lt;div class="text-lowercase"&gt;&lt;/div&gt;
+                                            <!-- Uppercased text -->
+                                            &lt;div class="text-uppercase"&gt;&lt;/div&gt;
+                                            <!-- Capitalized text -->
+                                            &lt;div class="text-capitalize"&gt;&lt;/div&gt;
+
+                                            <!-- Normal weight text -->
+                                            &lt;div class="text-normal"&gt;&lt;/div&gt;
+                                            <!-- Bold text -->
+                                            &lt;div class="text-bold"&gt;&lt;/div&gt;
+                                            <!-- Italicized text -->
+                                            &lt;div class="text-italic"&gt;&lt;/div&gt;
+                                            <!-- Larger text (120%) -->
+                                            &lt;div class="text-large"&gt;&lt;/div&gt;
+
+                                            <!-- Overflow behavior: display an ellipsis to represent clipped text -->
+                                            &lt;div class="text-ellipsis"&gt;&lt;/div&gt;
+                                            <!-- Overflow behavior: truncate the text -->
+                                            &lt;div class="text-clip"&gt;&lt;/div&gt;
+                                            <!-- Text may be broken at arbitrary points -->
+                                            &lt;div class="text-break"&gt;&lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Shape-->
+                        <div id="shapes">
+                            <h6 class="section-title-secondary">Shape</h6>
+                            <div class="example-content">
+                                <div class="">
+                                    <pre>
+                                        <code class="language-markup">
+                                            <!-- rounded element -->
+                                            &lt;div class="rounded"&gt;&lt;/div&gt;
+                                            <!-- circle element -->
+                                            &lt;div class="circle"&gt;&lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Experiment Layout-->
+                <section id="experimental" class="container">
+                    <h1 class="section-title">Experimental</h1>
+                    <div class="content-section">
+
+                        <!--Parallax Card-->
+                        <div id="parallax-card">
+                            <h5 class="section-title">Parallax Card</h5>
+                            <div class="example-content pt100">
+                                <div class="parallax-wrap">
+                                    <div class="parallax">
+                                        <div class="parallax__top--left"></div>
+                                        <div class="parallax__top--right"></div>
+                                        <div class="parallax__bottom--left"></div>
+                                        <div class="parallax__bottom--right"></div>
+                                        <div class="parallax__content">
+                                            <div class="parallax__front">
+                                                <h2>Pure CSS Parallax Demo</h2>
+                                            </div>
+                                            <div class="parallax__back">
+                                                <img src="http://www.ijailbreak.com/wp-content/uploads/2012/09/NatGeo17.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                            <pre>
+                                <code class="language-markup">
+                                 &lt;div class="parallax-wrap"&gt;
+                                    &lt;div class="parallax"&gt;
+                                        &lt;div class="parallax__top--left"&gt;&lt;/div&gt;
+                                        &lt;div class="parallax__top--right"&gt;&lt;/div&gt;
+                                        &lt;div class="parallax__bottom--left"&gt;&lt;/div&gt;
+                                        &lt;div class="parallax__bottom--right"&gt;&lt;/div&gt;
+                                        &lt;div class="parallax__content"&gt;
+                                            &lt;div class="parallax__front"&gt;
+                                                &lt;h2&gt;...&lt;/h2&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="parallax__back"&gt;
+                                                &lt;img src="http://www.ijailbreak.com/wp-content/uploads/2012/09/NatGeo17.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" /&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                </code>
+                            </pre>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer"></footer>
+
+<script src="../public/js/vendor.js"></script>
+<script src="../public/js/app.js"></script>
+<script type="text/javascript">
+    // Optional
+    Prism.plugins.NormalizeWhitespace.setDefaults({
+        'remove-trailing': true,
+        'remove-indent': true,
+        'left-trim': true,
+        'right-trim': true,
+    });
+</script>
+</body>
+</html>
