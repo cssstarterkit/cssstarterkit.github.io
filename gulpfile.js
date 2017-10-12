@@ -20,7 +20,6 @@ elixir(function (mix) {
             './assets/sass/vendor/prism.css'
         ], './public/css/vendor.css');
 
-
     mix.scripts('./assets/js/script.js', './public/js/app.js')
 
     mix.scripts([
