@@ -16,6 +16,7 @@ elixir(function (mix) {
             './cssstarterkit/asset/sass/vendor/normalize.css'
         ], './cssstarterkit/dist/css/vendor.css');
 
+
     mix.sass('./assets/sass/app.scss', './public/css/postcss/')
         .postcss('app.css', {
             plugins: [
