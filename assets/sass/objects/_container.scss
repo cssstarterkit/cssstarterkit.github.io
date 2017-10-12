@@ -1,0 +1,28 @@
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+
+  &--xsmall {
+    max-width: 320px;
+  }
+
+  &--small {
+    max-width: 480px;
+  }
+
+  &--medium {
+    max-width: 768px;
+  }
+
+  &--large {
+    max-width: 1024px;
+  }
+
+  &--xlarge {
+    max-width: 1248px;
+  }
+
+  &--super {
+    max-width: 1856px;
+  }
+}

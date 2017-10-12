@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
+body {
+  overflow-x: hidden;
+  white-space: normal;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-container {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.octocat {
+  border: 0;
+  color: #f4f5f6;
+  fill: #333333;
+  height: 52px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 52px;
+  z-index: 1;
+
+  .octocat-arm, .octocat-body {
+    fill: #fbfbfb;
+  }
+
+  &:hover, &:focus {
+    .octocat-arm {
+      animation: arm-wave .56s infinite;
+      transform-origin: 130px 100px;
+    }
+  }
+}
+
+@keyframes arm-wave {
+  0%, 50% {
+    transform: rotate(0)
+  }
+  25%, 75% {
+    transform: rotate(-25deg)
+  }
+}
+
+.hero-banner {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: #757F9A; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #D7DDE8, #757F9A); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  .container {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .row1 {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .headline {
+    h1 {
+      font-size: 72px;
+      font-weight: 200;
+      color: #fff;
+    }
+  }
+
+  .version {
+    font-size: 12px;
+    color: #efefef;
+    margin: 10px 0;
+  }
+}
+
+//Header
+.site-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding-left: 30px;
+  padding-top: 30px;
+
+  a {
+    display: block;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    color: $purple;
+    font-weight: bold;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.browser-list {
+  margin-top: 10px;
+  list-style: disc;
+  padding-left: 25px;
+
+  li {
+    font-weight: 500;
+  }
+}
+
+//Documentation
+//sidebar
+.documentation {
+  display: flex;
+  height: 100vh;
+
+  aside {
+    background: #f8f9fa;
+    border-right: 1px solid #efefef;
+    padding: 20px 20px 20px 30px;
+    width: 240px;
+    float: left;
+    position: fixed;
+    height: 100%;
+  }
+
+  .logo {
+    h1 {
+      font-size: 20px;
+      color: $purple;
+    }
+  }
+
+  .accordion {
+    overflow: scroll;
+    height: 80vh;
+  }
+
+  .sidebar-nav {
+    margin-top: 25px;
+
+    a {
+      color: #333;
+    }
+  }
+
+  .main-content {
+    width: calc(100% - 240px);
+    background: #fff;
+    float: left;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 40px;
+    margin-left: 240px;
+
+    .section {
+      &-title {
+        font-size: 24px;
+        line-height: 65px;
+        color: $purple;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 1px #e6e6e6;
+      }
+
+      &-description {
+        padding-top: 90px;
+      }
+    }
+
+    @include e ('inner') {
+      margin-top: 10px;
+
+      > section {
+        position: relative;
+
+        &.container {
+          padding: 0;
+        }
+      }
+    }
+
+    h1 {
+      color: #333;
+    }
+  }
+}
+
+//Sidebar-accordion
+.accordion {
+  .link {
+    cursor: pointer;
+    display: block;
+    padding: 10px 0;
+    color: #4D4D4D;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+  }
+}
+
+.accordion li:last-child .link {
+  border-bottom: 0;
+}
+
+.accordion li i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: #595959;
+  transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 12px;
+}
+
+.accordion li.open .link {
+  color: $purple;
+}
+
+.accordion li.open i {
+  color: $purple;
+}
+
+.accordion li.open i.fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.accordion li.default .submenu {
+  display: block;
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+.submenu {
+  display: none;
+  font-size: 14px;
+}
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 10px 10px 25px;
+  transition: all 0.25s ease;
+
+  &:hover, &:focus {
+    color: #7e87a1;
+  }
+}
+
+//Fixed-Scroll-Header
+
+
+

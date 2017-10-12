@@ -1,0 +1,24 @@
+/*!v3.2.2*/
+.fieldset, .fieldset.c-list {
+  display: block;
+  width: 100%;
+  margin: .5em 0;
+  padding: 0;
+  border: 0;
+}
+
+.fieldset__legend {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: .25em 0;
+}
+
+.form-element {
+  position: relative;
+  padding: 1em 0;
+
+  .label:first-child {
+    padding: 0 0 .5em;
+  }
+}

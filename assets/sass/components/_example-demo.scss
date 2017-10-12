@@ -1,0 +1,145 @@
+.example-content {
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  padding: 32px;
+  margin-bottom: 30px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin-top: 5px;
+
+  pre {
+    margin-top: 30px;
+    margin-bottom: 0;
+    background: none;
+    padding: 10px;
+    border-left: 4px solid rgba(155, 40, 175, 0.36);
+    box-shadow: -3px 3px 3px 0px rgba(215, 174, 223, 0.22);
+  }
+
+  .box, .box-first, .box-large, .box-nested, .box-row {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 1rem;
+    margin-bottom: 0;
+    background: #007FFF;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+  }
+
+  .box-row {
+    margin-bottom: 10px;
+  }
+
+  .box-nested {
+    background: #036;
+    border-color: #007FFF;
+  }
+
+  .box-first {
+    background: #06C;
+    border-color: #007FFF;
+  }
+
+  .box-large {
+    height: 8rem;
+  }
+
+  .box-container {
+    box-sizing: border-box;
+    padding: 5px;
+  }
+
+  code.demo {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #007eff;
+  }
+
+}
+
+.page-section {
+  .example-content {
+    .list {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.tooltip-section {
+  span {
+    font-size: 14px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 50px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+//Flex-Grid
+.flex-grid {
+  .example-content {
+    pre {
+      margin-top: 0;
+    }
+  }
+}
+
+.grid-demo-box {
+  background: #2e7edc;
+  border: 1px solid #2e7edc;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+
+  .grid-demo-box {
+    background: #333;
+    border: 1px solid #333;
+
+    .grid-demo-box {
+      border: 1px solid #f87d09;
+    }
+  }
+}
+
+.demo-note {
+  font-size: 14px;
+}
+
+.alert {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+//utilities-section
+
+.utilities-section {
+  pre {
+    margin-top: 0;
+  }
+}
+
+.pt100  {
+  padding-top: 100px;
+}
+
