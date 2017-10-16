@@ -15,7 +15,6 @@ elixir(function (mix) {
         })
         .styles([
             './assets/sass/vendor/normalize/normalize.css',
-            './assets/sass/vendor/accordion/accordion.css',
             './assets/sass/vendor/prism/prism.css',
             './assets/sass/vendor/jam-icons-css/jam-icons.css'
         ], './public/css/vendor.css');
