@@ -14,10 +14,10 @@ elixir(function (mix) {
             srcDir: './public/css/postcss/'
         })
         .styles([
-            './assets/sass/vendor/font-awesome.min.css',
-            './assets/sass/vendor/font-awesome-animation.css',
-            './assets/sass/vendor/normalize.css',
-            './assets/sass/vendor/prism.css'
+            './assets/sass/vendor/normalize/normalize.css',
+            './assets/sass/vendor/accordion/accordion.css',
+            './assets/sass/vendor/prism/prism.css',
+            './assets/sass/vendor/jam-icons-css/jam-icons.css'
         ], './public/css/vendor.css');
 
     mix.scripts('./assets/js/script.js', './public/js/app.js')
@@ -25,7 +25,9 @@ elixir(function (mix) {
     mix.scripts([
         './assets/js/vendor/jquery-3.2.1.min.js',
         './assets/js/vendor/modernizr-2.8.3.min.js',
-        './assets/js/vendor/prism.js',
-        './assets/js/vendor/prism-normalize-whitespace.js'
+        './assets/js/vendor/accordion-js/accordion.js',
+        './assets/js/vendor/modaal-js/modaal.min.js',
+        './assets/js/vendor/prism-js/prism.js',
+        './assets/js/vendor/prism-js/prism-normalize-whitespace.js'
     ], './public/js/vendor.js')
 });

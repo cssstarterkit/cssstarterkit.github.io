@@ -46,7 +46,7 @@
                             <ul class="submenu">
                                 <li><a href="#buttons">Buttons</a></li>
                                 <li><a href="#forms">Forms</a></li>
-                                <li><a href="#icons">Icons</a></li>
+                                <li><a href="#fonts">Icons</a></li>
                                 <li><a href="#labels">Labels</a></li>
                                 <li><a href="#media">Media</a></li>
                                 <li><a href="#typography">Typography</a></li>
@@ -62,7 +62,7 @@
                         <li>
                             <div class="link">Components <i class="fa fa-chevron-down"></i></div>
                             <ul class="submenu">
-                                <li><a href="#accordion">Accordions</a></li>
+                                <li><a href="#accordions">Accordions</a></li>
                                 <li><a href="#alerts">Alerts</a></li>
                                 <li><a href="#avatars">Avatars</a></li>
                                 <li><a href="#badges">Badges</a></li>
@@ -71,7 +71,7 @@
                                 <li><a href="#empty-states">Empty States</a></li>
                                 <li><a href="#inputs">Inputs</a></li>
                                 <li><a href="#menus">Menus</a></li>
-                                <li><a href="#modals">Modals</a></li>
+                                <li><a href="#modaal">Modals</a></li>
                                 <li><a href="#navs">Navs</a></li>
                                 <li><a href="#pagination">Pagination</a></li>
                                 <li><a href="#tabs">Tabs</a></li>
@@ -118,7 +118,6 @@
                             consistent design language.</p>
                     </div>
                 </section>
-
                 <!--Quick Start-->
                 <section id="quick-start" class="container">
                     <h3 class="section-title">Quick Start</h3>
@@ -135,17 +134,33 @@
                                             &lt;title&gt;Basic Template&lt;/title&gt;
 
                                             &lt;meta charset="utf-8"&gt;
+                                            &lt;meta http-equiv="x-ua-compatible" content="ie=edge"&gt;
+                                            &lt;title&gt;&lt;/title&gt;
+                                            &lt;meta name="description" content=""&gt;
                                             &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 
+                                            &lt;link rel="manifest" href="site.webmanifest"&gt;
+                                            &lt;link rel="apple-touch-icon" href="favicon.ico"&gt;
+
                                     <!-- CSS -->
-                                            &lt;link rel="stylesheet" href="assets/css/app.css"&gt;
+                                            &lt;link rel="stylesheet" href="../css/vendor.min.css"&gt;
+                                            &lt;link rel="stylesheet" href="../css/app.min.css"&gt;
 
                                         &lt;/head&gt;
                                         &lt;body&gt;
-                                            &lt;h1>Hello, world!&lt;/h1&gt;
+                                    <!--[if lte IE 9]>
+                                    &lt;p class="browserupgrade"&gt;You are using an &lt;strong>outdated&lt;/strong&gt; browser. Please &lt;a href="https://browsehappy.com/"&gt;upgrade your browser&lt;/a&gt; to improve your experience and security.&lt;/p&gt;
+                                    <![endif]-->
 
-                                    <!-- JS -->
-                                            &lt;script src="assets/js/app.js">&lt;/script&gt;
+                                    &lt;main&gt;
+                                                &lt;div class="main-wrapper"&gt;
+
+                                                &lt;/div&gt;
+                                            &lt;/main&gt;
+
+                                            &lt;script src="../js/vendor.min.js"&gt;&lt;/script&gt;
+                                            &lt;script src="../js/app.min.js"&gt;&lt;/script&gt;
+
                                         &lt;/body&gt;
                                     &lt;/html&gt;
                                 </code>
@@ -153,7 +168,6 @@
                         </div>
                     </div>
                 </section>
-
                 <!--Browser Support-->
                 <section id="browser-support" class="container">
                     <h3 class="section-title">Browser Support</h3>
@@ -275,7 +289,6 @@
                         </div>
                     </div>
                 </section>
-
                 <!--Table-->
                 <section id="table" class="container">
                     <h1 class="section-title">Tables</h1>
@@ -1125,24 +1138,27 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <pre><code class="language-markup">&lt;div class="row reverse"&gt;
-    &lt;div class="col-xsmall-2"&gt;
-        &lt;div class="box"&gt;
-            1
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-xsmall-2"&gt;
-        &lt;div class="box"&gt;
-            2
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="col-xsmall-2"&gt;
-        &lt;div class="box"&gt;
-            3
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+                                    <pre>
+                                        <code class="language-markup">
+                                            &lt;div class="row reverse"&gt;
+                                                &lt;div class="col-xsmall-2"&gt;
+                                                    &lt;div class="box"&gt;
+                                                        1
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-xsmall-2"&gt;
+                                                    &lt;div class="box"&gt;
+                                                        2
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="col-xsmall-2"&gt;
+                                                    &lt;div class="box"&gt;
+                                                        3
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        </code>
+                                    </pre>
                                 </div>
                             </div>
                         </div>
@@ -1151,6 +1167,279 @@
 
                 <!--Components-->
 
+                <!--Accordions-->
+                <section id="accordions" class="container">
+                    <h1 class="section-title">Accordion</h1>
+                    <p class="section-description">
+                        It is a lightweight jQuery plugin which allows you to programmatically collapse/expand single or multiple content nodes with smooth animations based on CSS3 transitions.
+                        Ideal for accordion or content toggle components.
+                    </p>
+                    <div class="content-section">
+                        <h6 class="section-title-secondary">Accordion Group <br>
+                            <small>(single open)</small>
+                        </h6>
+                        <div class="example-content">
+                            <section id="only-one" class="custom-accordion" data-accordion-group>
+                                <section data-accordion>
+                                    <button data-control>Accordion 1</button>
+                                    <div data-content>
+                                        <article>Item</article>
+                                        <article data-accordion>
+                                            <button data-control>2nd Level</button>
+                                            <div data-content>
+                                                <article>Item</article>
+                                                <article>Hoodie ennui Godard aesthetic, art party whatever trust fund slow-carb kogi tattooed single-origin coffee banjo. Deep v tote bag brunch,
+                                                    artisan distillery chillwave Williamsburg sartorial. Mustache blog wayfarers Carles, forage biodiesel butcher street art. Hashtag small batch
+                                                    bitters deep v gluten-free. Semiotics butcher blog, paleo asymmetrical narwhal selvage pug Pitchfork DIY artisan Wes Anderson put a bird on it
+                                                    drinking vinegar whatever. Artisan McSweeney's Shoreditch, wolf yr Marfa street art locavore craft beer aesthetic 90's gentrify. Yr hella
+                                                    fingerstache, Echo Park VHS +1 church-key XOXO Vice selvage gastropub readymade literally wayfarers.
+                                                </article>
+                                                <article>Item</article>
+                                                <article>Item</article>
+                                                <article>Item</article>
+                                                <article>Item</article>
+                                            </div>
+                                        </article>
+                                        <article data-accordion>
+                                            <button data-control>2nd Level</button>
+                                            <div data-content>
+                                                <article>Item</article>
+                                                <article>Item</article>
+                                                <article data-accordion>
+                                                    <button data-control>3rd Level</button>
+                                                    <div data-content>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                    </div>
+                                                </article>
+                                                <article data-accordion>
+                                                    <button data-control>3rd Level</button>
+                                                    <div data-content>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </article>
+                                        <article>Item</article>
+                                        <article>Item</article>
+                                        <article>Item</article>
+                                    </div>
+                                </section>
+                                <section data-accordion>
+                                    <button data-control>Accordion 2</button>
+                                    <div data-content>
+                                        <article>Item</article>
+                                        <article>Item</article>
+                                        <article>Item</article>
+                                    </div>
+                                </section>
+                            </section>
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;section id="onlyone" class="custom-accordion" data-accordion-group&gt;
+                                            &lt;div data-accordion&gt;
+                                                &lt;button data-control&gt;Accordion 1&lt;/button&gt;
+                                                &lt;div data-content&gt;
+                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                    &lt;article data-accordion&gt;
+                                                        &lt;button data-control&gt;2nd Level&lt;/button&gt;
+                                                        &lt;div data-content&gt;
+                                                            &lt;article&gt;Item&lt;/article&gt;
+                                                            &lt;article&gt;Item&lt;/article&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/article&gt;
+                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;div data-accordion&gt;
+                                                &lt;button data-control&gt;Accordion 2&lt;/button&gt;
+                                                &lt;div data-content&gt;
+                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/section&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block js">Js</span>
+                                    <code class="language-javascript">
+                                        $('#only-one [data-accordion]').accordion();
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <h6 class="section-title-seconadary">Accordion Group <br>
+                            <small>(multiple open)</small>
+                        </h6>
+                        <div class="example-content">
+                            <section id="multiple" class="custom-accordion" data-accordion-group>
+                                <div data-accordion>
+                                    <button data-control>Accordion 1</button>
+                                    <div data-content>
+                                        <article>Item</article>
+                                        <article data-accordion>
+                                            <button data-control>2nd Level</button>
+                                            <div data-content>
+                                                <article>Item</article>
+                                                <article>Item</article>
+                                                <article>Item</article>
+                                            </div>
+                                        </article>
+                                        <article data-accordion>
+                                            <button data-control>2nd Level</button>
+                                            <div data-content>
+                                                <article>Item</article>
+                                                <article>Item</article>
+                                                <article data-accordion>
+                                                    <button data-control>3rd Level</button>
+                                                    <div data-content>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                    </div>
+                                                </article>
+                                                <article data-accordion>
+                                                    <button data-control>3rd Level</button>
+                                                    <div data-content>
+                                                        <article>Item</article>
+                                                        <article>Item</article>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </article>
+                                        <article>Item</article>
+                                    </div>
+                                </div>
+
+                                <div data-accordion>
+                                    <button data-control>Accordion 2</button>
+                                    <div data-content>
+                                        <article>Item</article>
+                                        <article>Item</article>
+                                        <article>Item</article>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;section id="multiple" class="custom-accordion" data-accordion-group&gt;
+                                            &lt;div data-accordion&gt;
+                                                &lt;button data-control&gt;Accordion 1&lt;/button&gt;
+                                                &lt;div data-content&gt;
+                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                    &lt;article data-accordion&gt;
+                                                        &lt;button data-control&gt;2nd Level&lt;/button&gt;
+                                                        &lt;div data-content&gt;
+                                                            &lt;article&gt;Item&lt;/article&gt;
+                                                            &lt;article&gt;Item&lt;/article&gt;
+                                                            &lt;article&gt;Item&lt;/article&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/article&gt;
+                                                    &lt;article data-accordion&gt;
+                                                        &lt;button data-control&gt;2nd Level&lt;/button&gt;
+                                                        &lt;div data-content&gt;
+                                                            &lt;article&gt;Item&lt;/article&gt;
+                                                            &lt;article&gt;Item&lt;/article&gt;
+                                                            &lt;article data-accordion&gt;
+                                                                &lt;button data-control&gt;3rd Level&lt;/button&gt;
+                                                                &lt;div data-content&gt;
+                                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/article&gt;
+                                                            &lt;article data-accordion&gt;
+                                                                &lt;button data-control&gt;3rd Level&lt;/button&gt;
+                                                                &lt;div data-content&gt;
+                                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/article&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/article&gt;
+                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+
+                                            &lt;div data-accordion&gt;
+                                                &lt;button data-control&gt;Accordion 2&lt;/button&gt;
+                                                &lt;div data-content&gt;
+                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                    &lt;article&gt;Item&lt;/article&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/section&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block js">Js</span>
+                                    <code class="language-javascript">
+                                        $('#multiple [data-accordion]').accordion({
+                                            singleOpen: false
+                                        });
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <h6 class="section-title-secondary">Single Accordion <br>
+                            <small>(easeInOutQuad, 600ms duration)</small>
+                        </h6>
+                        <div class="example-content">
+                            <section id="single" class="custom-accordion" data-accordion>
+                                <button data-control>Single Accordion</button>
+                                <div data-content>
+                                    <article>Item</article>
+                                    <article>Item</article>
+                                    <article>Item</article>
+                                </div>
+                            </section>
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;section id="single" class="custom-accordion" data-accordion&gt;
+                                            &lt;button data-control&gt;Single Accordion&lt;/button&gt;
+                                            &lt;div data-content&gt;
+                                                &lt;article&gt;Item&lt;/article&gt;
+                                                &lt;article&gt;Item&lt;/article&gt;
+                                                &lt;article&gt;Item&lt;/article&gt;
+                                            &lt;/div&gt;
+                                        &lt;/section&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block js">Js</span>
+                                    <code class="language-javascript">
+                                        $('#single[data-accordion]').accordion({
+                                            transitionEasing: 'cubic-bezier(0.455, 0.030, 0.515, 0.955)',
+                                            transitionSpeed: 200
+                                        });
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
                 <!--Alerts-->
                 <section id="alerts" class="container">
                     <h1 class="section-title">Alerts & Notification</h1>
@@ -1238,7 +1527,6 @@
                         </div>
                     </div>
                 </section>
-
                 <!--Dropdown-->
                 <section id="dropdown" class="container">
                     <h1 class="section-title">Dropdown</h1>
@@ -1366,11 +1654,6 @@
                             <div class="">
                                 <pre>
                                     <code class="language-markup">
-                                        &lt;div class="grid grid--full"&gt;
-                                            &lt;div class="grid-cell"&gt;
-                                                &lt;div class="grid-demo-box"&gt;Content 1&lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
                                         &lt;form method="post" action="" class="form"&gt;
                                             &lt;div class="form-item"&gt;
                                                 &lt;label&gt;Email&lt;/label&gt;
@@ -1423,14 +1706,14 @@
                         <!--With-Required-->
                         <h6 class="section-title-secondary">With Required</h6>
                         <div class="example-content">
-                            <div class="grid grid--cols-2 grid--gutters">
-                                <div class="grid-cell">
+                            <div class="row">
+                                <div class="col-xsmall-12 col-small-6">
                                     <div class="form-item">
                                         <label>Location <span class="required">*</span></label>
                                         <input type="text"/>
                                     </div>
                                 </div>
-                                <div class="grid-cell">
+                                <div class="col-xsmall-12 col-small-6">
                                     <div class="form-item">
                                         <label>Location <span class="desc">You there</span></label>
                                         <input type="text"/>
@@ -1441,14 +1724,14 @@
                             <div class="">
                                 <pre>
                                     <code class="language-markup">
-                                        &lt;div class="grid grid--cols-2 grid--gutters"&gt;
-                                            &lt;div class="grid-cell"&gt;
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="col-xsmall-12 col-small-6"&gt;
                                                 &lt;div class="form-item"&gt;
                                                     &lt;label>Location &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;
                                                     &lt;input type="text" /&gt;
                                                 &lt;/div&gt;
                                             &lt;/div&gt;
-                                            &lt;div class="grid-cell"&gt;
+                                            &lt;div class="col-xsmall-12 col-small-6"&gt;
                                                 &lt;div class="form-item"&gt;
                                                     &lt;label&gt;Location &lt;span class="desc">You there&lt;/span&gt;&lt;/label&gt;
                                                     &lt;input type="text" /&gt;
@@ -1458,8 +1741,9 @@
                                         &lt;/div&gt;
                                     </code>
                                 </pre>
-                                <p class="demo-note">Add classes <strong>required</strong> and <strong>desc</strong> for the required text</p>
                             </div>
+
+                            <p class="demo-note">Add classes <strong>required</strong> and <strong>desc</strong> for the required text</p>
                         </div>
 
                         <!--Checkbox-->
@@ -1692,7 +1976,1975 @@
                         </div>
                     </div>
                 </section>
+                <!--Font Icon-->
+                <section id="fonts" class="container">
+                    <h1 class="section-title">Font Icons (Jam Icons)</h1>
+                    <p class="section-description">
+                        Jam icons is a set of icons designed for web projects, illustrations, print projects, etc. (filled & outlined icons).
+                        The icons have been made in a 64x64 grid with a 4 pixels stroke basis, all in a consistent way and tested at 18x18, 24x24, 32x32.
+                    </p>
+                    <div class="content-section">
+                        <div class="example-content">
+                            <h6 class="section-title-secondary icon-title">Web Icons</h6>
+                            <div class="row example-icon-row">
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-anchor"></span>
+                                    <span class="block">anchor</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-attachement"></span>
+                                    <span class="block">attachment</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-backpack"></span>
+                                    <span class="block">backpack</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-balloon"></span>
+                                    <span class="block">balloon</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-bandage"></span>
+                                    <span class="block">bandage</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-bar-chart"></span>
+                                    <span class="block">bar-chart</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-baseball"></span>
+                                    <span class="block">baseball</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-battery-charging"></span>
+                                    <span class="block">battery-charging</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-battery-empty"></span>
+                                    <span class="block">battery-empty</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-battery-full"></span>
+                                    <span class="block">battery-full</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-battery-quarter"></span>
+                                    <span class="block">battery-quarter</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-battery-two-quarter"></span>
+                                    <span class="block">battery-two-quarter</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-beer"></span>
+                                    <span class="block">beer</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-bookmark"></span>
+                                    <span class="block">bookmark</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-bookmark-f"></span>
+                                    <span class="block">bookmark-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-box"></span>
+                                    <span class="block">box</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-box-f"></span>
+                                    <span class="block">box-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-brightness"></span>
+                                    <span class="block">brightness</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-brightness-down"></span>
+                                    <span class="block">brightness-down</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-brightness-up"></span>
+                                    <span class="block">brightness-up</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-brush"></span>
+                                    <span class="block">brush</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-bus"></span>
+                                    <span class="block">bus</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-battery-two-quarter"></span>
+                                    <span class="block">battery-two-quarter</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cactus"></span>
+                                    <span class="block">cactus</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-calculator"></span>
+                                    <span class="block">calculator</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-calendar"></span>
+                                    <span class="block">calender</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-calendar-alt"></span>
+                                    <span class="block">calendar-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-camera"></span>
+                                    <span class="block">camera</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-camera-alt"></span>
+                                    <span class="block">camera-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-candle"></span>
+                                    <span class="block">candle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-car"></span>
+                                    <span class="block">car</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-castle"></span>
+                                    <span class="block">castle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-check"></span>
+                                    <span class="block">check</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-check"></span>
+                                    <span class="block">check</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-chess"></span>
+                                    <span class="block">chess</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-close"></span>
+                                    <span class="block">close</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cloud"></span>
+                                    <span class="block">cloud</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cloud-f"></span>
+                                    <span class="block">cloud-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-coffee-cup"></span>
+                                    <span class="block">coffee-cup</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-coffee-cup-f"></span>
+                                    <span class="block">coffee-cup-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cog"></span>
+                                    <span class="block">cog</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cog-f"></span>
+                                    <span class="block">cog-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cogs"></span>
+                                    <span class="block">cogs</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cogs-f"></span>
+                                    <span class="block">cogs-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cloud"></span>
+                                    <span class="block">cloud</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-compass"></span>
+                                    <span class="block">compass</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-computer"></span>
+                                    <span class="block">computer</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-computer-alt"></span>
+                                    <span class="block">computer-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-credit-card"></span>
+                                    <span class="block">credit-card</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-credit-card-f"></span>
+                                    <span class="block">credit-card-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cutlery"></span>
+                                    <span class="block">cutlery</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cutter"></span>
+                                    <span class="block">cutter</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cloud"></span>
+                                    <span class="block">cloud</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-dashboard"></span>
+                                    <span class="block">dashboard</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-dashboard-f"></span>
+                                    <span class="block">dashboard-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-database"></span>
+                                    <span class="block">database</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-deejay"></span>
+                                    <span class="block">deejay</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-direction"></span>
+                                    <span class="block">direction</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-direction-f"></span>
+                                    <span class="block">direction-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-directions"></span>
+                                    <span class="block">directions</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-directions-f"></span>
+                                    <span class="block">directions-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-disc"></span>
+                                    <span class="block">disc</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-dna"></span>
+                                    <span class="block">dna</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-document"></span>
+                                    <span class="block">document</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-document-f"></span>
+                                    <span class="block">document-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-download"></span>
+                                    <span class="block">download</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-egg"></span>
+                                    <span class="block">egg</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-egg-f"></span>
+                                    <span class="block">egg-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-eggs"></span>
+                                    <span class="block">eggs</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-envelope"></span>
+                                    <span class="block">envelope</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-envelope-open"></span>
+                                    <span class="block">envelope-open</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-envelope-open-f"></span>
+                                    <span class="block">envelope-open-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-eye"></span>
+                                    <span class="block">eye</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-feather-pen"></span>
+                                    <span class="block">feather-pen</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-female"></span>
+                                    <span class="block">female</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-file"></span>
+                                    <span class="block">file</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-files"></span>
+                                    <span class="block">files</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-fingerprint"></span>
+                                    <span class="block">fingerprint</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-fish"></span>
+                                    <span class="block">fish</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-flag"></span>
+                                    <span class="block">flag</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-flag-f"></span>
+                                    <span class="block">flag-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-flame"></span>
+                                    <span class="block">flame</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-flashlight-off"></span>
+                                    <span class="block">flashlight-off</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-flashlight-on"></span>
+                                    <span class="block">flashlight-on</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-flask"></span>
+                                    <span class="block">flask</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-flask-alt"></span>
+                                    <span class="block">flask-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-flower"></span>
+                                    <span class="block">flower</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-folder"></span>
+                                    <span class="block">folder</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-folder-f"></span>
+                                    <span class="block">folder-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-football"></span>
+                                    <span class="block">football</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-gamepad"></span>
+                                    <span class="block">gamepad</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-gamepad-retro"></span>
+                                    <span class="block">gamepad-retro</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-ghost"></span>
+                                    <span class="block">ghost</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-ghost-f"></span>
+                                    <span class="block">ghost-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-gift"></span>
+                                    <span class="block">gift</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-glass-empty"></span>
+                                    <span class="block">glass-empty</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-glass-filled"></span>
+                                    <span class="block">glass-filled</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-glue"></span>
+                                    <span class="block">glue</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-gps"></span>
+                                    <span class="block">gps</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-gps-f"></span>
+                                    <span class="block">gps-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-graphic-chart"></span>
+                                    <span class="block">graphic-chart</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-hair-dryer"></span>
+                                    <span class="block">hair-dryer</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-hammer"></span>
+                                    <span class="block">hammer</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-hashtag"></span>
+                                    <span class="block">hashtag</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-headphone"></span>
+                                    <span class="block">headphone</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-heart"></span>
+                                    <span class="block">heart</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-heart-f"></span>
+                                    <span class="block">heart-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-helmet"></span>
+                                    <span class="block">helmet</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-highlighter"></span>
+                                    <span class="block">highlighter</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-home"></span>
+                                    <span class="block">home</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-home-f"></span>
+                                    <span class="block">home-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-hourglass"></span>
+                                    <span class="block">hourglass</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-ice-cream"></span>
+                                    <span class="block">ice-cream</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-ice-cream-f"></span>
+                                    <span class="block">ice-cream-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-id-card"></span>
+                                    <span class="block">id-card</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-info"></span>
+                                    <span class="block">info</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-joystick"></span>
+                                    <span class="block">joystick</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-key"></span>
+                                    <span class="block">key</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-keyboard"></span>
+                                    <span class="block">keyboard</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-language"></span>
+                                    <span class="block">language</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-levels"></span>
+                                    <span class="block">levels</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-life-bouy"></span>
+                                    <span class="block">life-bouy</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-light-bulb"></span>
+                                    <span class="block">light-bulb</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-line-chart"></span>
+                                    <span class="block">line-chart</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-luggage"></span>
+                                    <span class="block">luggage</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-magic"></span>
+                                    <span class="block">magic</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-magnet"></span>
+                                    <span class="block">magnet</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-male"></span>
+                                    <span class="block">male</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-map-marker"></span>
+                                    <span class="block">map-marker</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-map-marker-f"></span>
+                                    <span class="block">map-marker-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-medal"></span>
+                                    <span class="block">medal</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-message"></span>
+                                    <span class="block">message</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-message-writing"></span>
+                                    <span class="block">message-writing</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-messages"></span>
+                                    <span class="block">messages</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-message-alt"></span>
+                                    <span class="block">message-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-message-writing-alt"></span>
+                                    <span class="block">message-writing-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-message-f"></span>
+                                    <span class="block">message-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-message-writing-f"></span>
+                                    <span class="block">message-writing-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-messages-f"></span>
+                                    <span class="block">messages-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-message-alt-f"></span>
+                                    <span class="block">message-alt-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-message-writing-alt-f"></span>
+                                    <span class="block">message-writing-alt-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-mic"></span>
+                                    <span class="block">mic</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-minus"></span>
+                                    <span class="block">minus</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-moon"></span>
+                                    <span class="block">moon</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-moon-f"></span>
+                                    <span class="block">moon-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-more"></span>
+                                    <span class="block">more</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-more-f"></span>
+                                    <span class="block">more-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-more-alt"></span>
+                                    <span class="block">more-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-more-alt-f"></span>
+                                    <span class="block">more-alt-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-motorcycle"></span>
+                                    <span class="block">motorcycle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-mountain"></span>
+                                    <span class="block">mountain</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-mountains"></span>
+                                    <span class="block">mountains</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-movie"></span>
+                                    <span class="block">movie</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-news"></span>
+                                    <span class="block">news</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-padlock"></span>
+                                    <span class="block">padlock</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-padlock-f"></span>
+                                    <span class="block">padlock-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-padlock-open"></span>
+                                    <span class="block">padlock-open</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-padlock-open-f"></span>
+                                    <span class="block">padlock-open-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-padlock-alt"></span>
+                                    <span class="block">padlock-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-padlock-alt-open"></span>
+                                    <span class="block">padlock-alt-open</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-paper-plane"></span>
+                                    <span class="block">paper-plane</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-paper-plane-f"></span>
+                                    <span class="block">paper-plane-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pen"></span>
+                                    <span class="block">pen</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pencil"></span>
+                                    <span class="block">pencil</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-phone"></span>
+                                    <span class="block">phone</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-picture"></span>
+                                    <span class="block">picture</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pictures"></span>
+                                    <span class="block">pictures</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pie-chart"></span>
+                                    <span class="block">pie-chart</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pie-chart-alt"></span>
+                                    <span class="block">pie-chart-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pin"></span>
+                                    <span class="block">pin</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pin-f"></span>
+                                    <span class="block">pin-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pin-alt"></span>
+                                    <span class="block">pin-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pin-alt-f"></span>
+                                    <span class="block">pin-alt-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pizza-slice"></span>
+                                    <span class="block">pizza-slice</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pizza-slice-f"></span>
+                                    <span class="block">pizza-slice-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-plane"></span>
+                                    <span class="block">plane</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-plug"></span>
+                                    <span class="block">plug</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-plus"></span>
+                                    <span class="block">plus</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pocket-watch"></span>
+                                    <span class="block">pocket-watch</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-popcorn"></span>
+                                    <span class="block">popcorn</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-printer"></span>
+                                    <span class="block">printer</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-qr-scan"></span>
+                                    <span class="block">qr-scan</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-rocket"></span>
+                                    <span class="block">rocket</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-rss-feed"></span>
+                                    <span class="block">rss-feed</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-rubber"></span>
+                                    <span class="block">rubber</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-ruler"></span>
+                                    <span class="block">ruler</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-scissors"></span>
+                                    <span class="block">scissors</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-screwdriver"></span>
+                                    <span class="block">screwdriver</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-search"></span>
+                                    <span class="block">search</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-set-square"></span>
+                                    <span class="block">set-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-share-alt"></span>
+                                    <span class="block">share-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-share"></span>
+                                    <span class="block">share</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shield"></span>
+                                    <span class="block">shield</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shield-f"></span>
+                                    <span class="block">shield-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shield-half"></span>
+                                    <span class="block">shield-half</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shield-check"></span>
+                                    <span class="block">shield-check</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shield-error"></span>
+                                    <span class="block">shield-error</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shield-check-f"></span>
+                                    <span class="block">shield-check-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shield-error-f"></span>
+                                    <span class="block">shield-error-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shop"></span>
+                                    <span class="block">shop</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shopping-bag"></span>
+                                    <span class="block">shopping-bag</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shopping-bag-f"></span>
+                                    <span class="block">shopping-bag-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shopping-bag-alt"></span>
+                                    <span class="block">shopping-bag-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shopping-bag-alt-f"></span>
+                                    <span class="block">shopping-bag-alt-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shopping-cart"></span>
+                                    <span class="block">shopping-cart</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-shopping-cart-f"></span>
+                                    <span class="block">shopping-cart-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-signal"></span>
+                                    <span class="block">signal</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-smiley"></span>
+                                    <span class="block">smiley</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-snowboard"></span>
+                                    <span class="block">snowboard</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-snowflake"></span>
+                                    <span class="block">snowflake</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-soccer"></span>
+                                    <span class="block">soccer</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-speaker"></span>
+                                    <span class="block">speaker</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-stamp"></span>
+                                    <span class="block">stamp</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-star"></span>
+                                    <span class="block">star</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-star-f"></span>
+                                    <span class="block">star-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-star-half"></span>
+                                    <span class="block">star-half</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-stop-sign"></span>
+                                    <span class="block">stop-sign</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-sword"></span>
+                                    <span class="block">sword</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tag"></span>
+                                    <span class="block">tag</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tag-f"></span>
+                                    <span class="block">tag-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tags"></span>
+                                    <span class="block">tags</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-target"></span>
+                                    <span class="block">target</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-thermometer-empty"></span>
+                                    <span class="block">thermometer-empty</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-thermometer-full"></span>
+                                    <span class="block">thermometer-full</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-thunder"></span>
+                                    <span class="block">thunder</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-thunder-f"></span>
+                                    <span class="block">thunder-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-ticket"></span>
+                                    <span class="block">ticket</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-time"></span>
+                                    <span class="block">time</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tools"></span>
+                                    <span class="block">tools</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-torch"></span>
+                                    <span class="block">torch</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-totem"></span>
+                                    <span class="block">totem</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-train"></span>
+                                    <span class="block">train</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-transgender"></span>
+                                    <span class="block">transgender</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-trash"></span>
+                                    <span class="block">trash</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-trash-f"></span>
+                                    <span class="block">trash-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-trash-alt"></span>
+                                    <span class="block">trash-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tree"></span>
+                                    <span class="block">tree</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tree-f"></span>
+                                    <span class="block">tree-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tree-alt"></span>
+                                    <span class="block">tree-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tree-alt-f"></span>
+                                    <span class="block">tree-alt-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-trophy"></span>
+                                    <span class="block">trophy</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tube"></span>
+                                    <span class="block">tube</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-umbrella"></span>
+                                    <span class="block">umbrella</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-umbrella-f"></span>
+                                    <span class="block">umbrella-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-universe"></span>
+                                    <span class="block">universe</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-upload"></span>
+                                    <span class="block">upload</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-user"></span>
+                                    <span class="block">user</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-user-f"></span>
+                                    <span class="block">user-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-users"></span>
+                                    <span class="block">users</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-users-f"></span>
+                                    <span class="block">users-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-cloud"></span>
+                                    <span class="block">cloud</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-video-camera"></span>
+                                    <span class="block">video-camera</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-video-camera-vintage"></span>
+                                    <span class="block">video-camera-vintage</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-voicemail"></span>
+                                    <span class="block">voicemail</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-water-drop"></span>
+                                    <span class="block">water-drop</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-water-drop-f"></span>
+                                    <span class="block">water-drop-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-wheel"></span>
+                                    <span class="block">wheel</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-wifi"></span>
+                                    <span class="block">wifi</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-wine-bottle"></span>
+                                    <span class="block">wine-bottle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-wrench"></span>
+                                    <span class="block">wrench</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-write"></span>
+                                    <span class="block">write</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-zoom-plus"></span>
+                                    <span class="block">zoom-plus</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-zoom-minus"></span>
+                                    <span class="block">zoom-minus</span>
+                                </div>
+                            </div>
+                            <h6 class="section-title-secondary icon-title">Directional Icons</h6>
+                            <div class="row example-icon-row">
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-angle-down"></span>
+                                    <span class="block">angle-down</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-angle-left"></span>
+                                    <span class="block">angle-left</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-angle-right"></span>
+                                    <span class="block">angle-right</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-angle-top"></span>
+                                    <span class="block">angle-top</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-left"></span>
+                                    <span class="block">arrow-left</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-right"></span>
+                                    <span class="block">arrow-right</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-top"></span>
+                                    <span class="block">arrow-top</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-bottom"></span>
+                                    <span class="block">arrow-bottom</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-bottom-circle"></span>
+                                    <span class="block">arrow-bottom-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-left-circle"></span>
+                                    <span class="block">arrow-left-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-right-circle"></span>
+                                    <span class="block">arrow-right-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-top-circle"></span>
+                                    <span class="block">arrow-top-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-down-left"></span>
+                                    <span class="block">arrow-down-left</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-down-right"></span>
+                                    <span class="block">arrow-down-right</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-top-left"></span>
+                                    <span class="block">arrow-top-left</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-top-right"></span>
+                                    <span class="block">arrow-top-right</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-down-sm"></span>
+                                    <span class="block">arrow-down-sm</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-left-sm"></span>
+                                    <span class="block">jam-arrow-left-sm</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-right-sm"></span>
+                                    <span class="block">arrow-right-sm</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrow-top-sm"></span>
+                                    <span class="block">arrow-top-sm</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrows-corners"></span>
+                                    <span class="block">arrows-corners</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrows-fullscreen"></span>
+                                    <span class="block">arrows-fullscreen</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrows-h"></span>
+                                    <span class="block">arrows-h</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-arrows-v"></span>
+                                    <span class="block">arrows-v</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-caret-down"></span>
+                                    <span class="block">caret-down</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-caret-left"></span>
+                                    <span class="block">caret-left</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-caret-right"></span>
+                                    <span class="block">caret-right</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-caret-top"></span>
+                                    <span class="block">caret-top</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-caret-down-circle"></span>
+                                    <span class="block">caret-down-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-caret-left-circle"></span>
+                                    <span class="block">caret-left-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-caret-right-circle"></span>
+                                    <span class="block">caret-right-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-caret-top-circle"></span>
+                                    <span class="block">caret-top-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-move"></span>
+                                    <span class="block">move</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-redo"></span>
+                                    <span class="block">redo</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-split-h"></span>
+                                    <span class="block">split-h</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-split-v"></span>
+                                    <span class="block">split-v</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-undo"></span>
+                                    <span class="block">undo</span>
+                                </div>
+                            </div>
+                            <h6 class="section-title-secondary icon-title">Player Icons</h6>
+                            <div class="row example-icon-row">
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-backward"></span>
+                                    <span class="block">backward</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-eject"></span>
+                                    <span class="block">eject</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-forward"></span>
+                                    <span class="block">forward</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-next"></span>
+                                    <span class="block">next</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pause"></span>
+                                    <span class="block">pause</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-play"></span>
+                                    <span class="block">play</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-stop"></span>
+                                    <span class="block">stop</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-rec"></span>
+                                    <span class="block">rec</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-previous"></span>
+                                    <span class="block">previous</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-volume-down"></span>
+                                    <span class="block">volume-down</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-volume-mute"></span>
+                                    <span class="block">volume-mute</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-volume"></span>
+                                    <span class="block">volume</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-volume-up"></span>
+                                    <span class="block">volume-up</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-power"></span>
+                                    <span class="block">power</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-random"></span>
+                                    <span class="block">random</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-backward-f"></span>
+                                    <span class="block">backward-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-eject-f"></span>
+                                    <span class="block">eject-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-forward-f"></span>
+                                    <span class="block">forward-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-next-f"></span>
+                                    <span class="block">next-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pause-f"></span>
+                                    <span class="block">pause-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-play-f"></span>
+                                    <span class="block">play-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-previous-f"></span>
+                                    <span class="block">previous-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-rec-f"></span>
+                                    <span class="block">rec-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-stop-f"></span>
+                                    <span class="block">stop-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-volume-down-f"></span>
+                                    <span class="block">volume-down-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-volume-mute-f"></span>
+                                    <span class="block">volume-mute-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-volume-f"></span>
+                                    <span class="block">volume-f</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-volume-up-f"></span>
+                                    <span class="block">volume-up-f</span>
+                                </div>
+                            </div>
+                            <h6 class="section-title-secondary icon-title">Text Icons</h6>
+                            <div class="row example-icon-row">
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-align-center"></span>
+                                    <span class="block">align-center</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-align-justify"></span>
+                                    <span class="block">align-justify</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-align-left"></span>
+                                    <span class="block">align-left</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-align-right"></span>
+                                    <span class="block">align-right</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-bold"></span>
+                                    <span class="block">bold</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-code"></span>
+                                    <span class="block">code</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-font"></span>
+                                    <span class="block">font</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-heading"></span>
+                                    <span class="block">heading</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-indent"></span>
+                                    <span class="block">indent</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-italic"></span>
+                                    <span class="block">italic</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-link"></span>
+                                    <span class="block">link</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-o-list"></span>
+                                    <span class="block">o-list</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-outdent"></span>
+                                    <span class="block">outdent</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-paragraph"></span>
+                                    <span class="block">paragraph</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-strikethrough"></span>
+                                    <span class="block">strikethrough</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-table"></span>
+                                    <span class="block">table</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-u-list"></span>
+                                    <span class="block">u-list</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-underline"></span>
+                                    <span class="block">underline</span>
+                                </div>
+                            </div>
+                            <h6 class="section-title-secondary icon-title">Social Icons</h6>
+                            <div class="row example-icon-row">
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-amazon"></span>
+                                    <span class="block">amazon</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-apple"></span>
+                                    <span class="block">apple</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-behance"></span>
+                                    <span class="block">behance</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-behance-circle"></span>
+                                    <span class="block">behance-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-behance-square"></span>
+                                    <span class="block">behance-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-css3"></span>
+                                    <span class="block">css3</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-digg"></span>
+                                    <span class="block">digg</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-dribbble"></span>
+                                    <span class="block">dribbble</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-dribbble-square"></span>
+                                    <span class="block">dribbble-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-dropbox"></span>
+                                    <span class="block">dropbox</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-facebook"></span>
+                                    <span class="block">facebook</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-facebook-circle"></span>
+                                    <span class="block">facebook-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-facebook-square"></span>
+                                    <span class="block">facebook-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-flickr"></span>
+                                    <span class="block">flickr</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-flickr-circle"></span>
+                                    <span class="block">flickr-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-flickr-square"></span>
+                                    <span class="block">flickr-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-github"></span>
+                                    <span class="block">github</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-github-alt"></span>
+                                    <span class="block">github-alt</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-google"></span>
+                                    <span class="block">google</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-google-plus"></span>
+                                    <span class="block">google-plus</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-html5"></span>
+                                    <span class="block">html5</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-instagram"></span>
+                                    <span class="block">instagram</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-instagram-circle"></span>
+                                    <span class="block">instagram-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-instagram-square"></span>
+                                    <span class="block">instagram-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-jsfiddle"></span>
+                                    <span class="block">jsfiddle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-linkedin"></span>
+                                    <span class="block">linkedin</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-linkedin-circle"></span>
+                                    <span class="block">linkedin-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-linkedin-square"></span>
+                                    <span class="block">linkedin-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-paypal"></span>
+                                    <span class="block">paypal</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pinterest"></span>
+                                    <span class="block">pinterest</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pinterest-circle"></span>
+                                    <span class="block">pinterest-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-pinterest-square"></span>
+                                    <span class="block">pinterest-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-reddit"></span>
+                                    <span class="block">reddit</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-slack"></span>
+                                    <span class="block">slack</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-snapchat"></span>
+                                    <span class="block">snapchat</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-snapchat-circle"></span>
+                                    <span class="block">snapchat-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-snapchat-square"></span>
+                                    <span class="block">snapchat-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-soundcloud"></span>
+                                    <span class="block">soundcloud</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-spotify"></span>
+                                    <span class="block">spotify</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-spotify-circle"></span>
+                                    <span class="block">spotify-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-spotify-square"></span>
+                                    <span class="block">spotify-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-stach-overflow"></span>
+                                    <span class="block">stach-overflow</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tumblr"></span>
+                                    <span class="block">tumblr</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tumblr-circle"></span>
+                                    <span class="block">tumblr-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-tumblr-square"></span>
+                                    <span class="block">tumblr-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-twitch"></span>
+                                    <span class="block">twitch</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-twitter"></span>
+                                    <span class="block">twitter</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-twitter-circle"></span>
+                                    <span class="block">twitter-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-twitter-square"></span>
+                                    <span class="block">twitter-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-viadeo"></span>
+                                    <span class="block">viadeo</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-vimeo"></span>
+                                    <span class="block">vimeo</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-vimeo-circle"></span>
+                                    <span class="block">vimeo-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-vimeo-square"></span>
+                                    <span class="block">vimeo-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-vine"></span>
+                                    <span class="block">vine</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-vine-circle"></span>
+                                    <span class="block">vine-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-vine-square"></span>
+                                    <span class="block">vine-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-whatsapp"></span>
+                                    <span class="block">whatsapp</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-wikipedia"></span>
+                                    <span class="block">wikipedia</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-wikipedia-circle"></span>
+                                    <span class="block">wikipedia-circle</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-wikipedia-square"></span>
+                                    <span class="block">wikipedia-square</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-wordpress"></span>
+                                    <span class="block">wordpress</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-yahoo"></span>
+                                    <span class="block">yahoo</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-yelp"></span>
+                                    <span class="block">yelp</span>
+                                </div>
+                                <div class="text-center col-xsmall-2">
+                                    <span class="jam jam-youtube"></span>
+                                    <span class="block">youtube</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--Modaal-->
+                <section id="modaal" class="container">
+                    <h1 class="section-title">Modaal</h1>
+                    <p class="section-description">
+                        An accessible dialog window library for all humans.
+                    </p>
+                    <div class="content-section">
+                        <!--Simple Modal-->
+                        <h6 class="section-title-secondary">Simple Modaal</h6>
+                        <div class="example-content">
+                            <a href="#inline-content" class="button inline">Show <span class="ui-hidden">Inline</span> Modaal</a>
+                            <div id="inline-content" class="hide">
+                                <h2>Simple Modal Content</h2>
+                                <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, <a href="http://google.com" target="_blank">porttitor
+                                    eu</a>, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+                                    Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+                                    condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec
+                                    odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
+                                    fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+                                <p>Quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.
+                                    <a href="http://humaan.com" target="_blank">Cras ultricies mi eu turpis</a> hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                                    posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum.
+                                    Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing.</p>
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat
+                                    dolor lectus quis orci. <a href="http://www.nytimes.com/" target="_blank">Phasellus consectetuer vestibulum elit.</a> Aenean tellus metus, bibendum sed, posuere ac,
+                                    mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue
+                                    blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat augue.</p>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;a href="#inline" class="inline"&gt;Show&lt;/a&gt;
+                                        &lt;div id="inline" class="hide"&gt;
+                                            Inline content goes here...
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block js">Js</span>
+                                    <code class="language-javascript">
+                                        $(".inline").modaal();
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Fullscreen Modal-->
+                        <h6 class="section-title-secondary">Fullscreen Modaal</h6>
+                        <div class="example-content">
+                            <a href="#fullscreen-content-1" class="button fullscreen">Show Fullscreen Modaal</a>
+                            <div id="fullscreen-content-1" class="hide">
+                                <h2>Fullscreen Modal Content</h2>
+                                <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, <a href="http://google.com" target="_blank">porttitor
+                                    eu</a>, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+                                    Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+                                    condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec
+                                    odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
+                                    fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+                                <p>Quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.
+                                    <a href="http://humaan.com" target="_blank">Cras ultricies mi eu turpis</a> hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                                    posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum.
+                                    Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing.</p>
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat
+                                    dolor lectus quis orci. <a href="http://www.nytimes.com/" target="_blank">Phasellus consectetuer vestibulum elit.</a> Aenean tellus metus, bibendum sed, posuere ac,
+                                    mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue
+                                    blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat augue.</p>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;a href="#fullscreen" class="modaal-fullscreen"&gt;Show&lt;/a&gt;
+                                        &lt;div id="fullscreen" class="hide"&gt;
+                                            Inline content goes here...
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block js">Js</span>
+                                    <code class="language-javascript">
+                                        $('.modaal-fullscreen').modaal({
+                                            fullscreen: true
+                                        });
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Ajax Modal-->
+                        <h6 class="section-title-secondary">Ajax Modaal</h6>
+                        <div class="example-content">
+                            <a href="http://humaan.com/modaal/demo/ajax-content.html" class="button modaal-ajax">Show Ajax Modaal</a>
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;a href="http://humaan.com/modaal/demo/ajax-content.html" class="modaal-ajax"&gt;Show ajax modaal&lt;/a&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block js">Js</span>
+                                    <code class="language-javascript">
+                                        $('.modaal-ajax').modaal({
+                                            type: 'ajax'
+                                        });
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Single Image Modal-->
+                        <h6 class="section-title-secondary">Single Image Modaal</h6>
+                        <div class="example-content">
+                            <a href="http://humaan.com/modaal/demo/img/temp/gallery-1.jpg" class="modaal-image modaal-gallery-thumb">
+                                <img src="http://humaan.com/modaal/demo/img/temp/gallery-1.jpg" alt="Thumbnail for single image">
+                            </a>
 
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;a href="http://humaan.com/modaal/demo/img/temp/gallery-1.jpg" class="modaal-image modaal-gallery-thumb"&gt;
+                                            &lt;img src="http://humaan.com/modaal/demo/img/temp/gallery-1.jpg" alt="Thumbnail for single image"&gt;
+                                        &lt;/a&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block js">Js</span>
+                                    <code class="language-javascript">
+                                        $('.modaal-image').modaal({
+                                            type: 'image'
+                                        });
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Image Gallery-->
+                        <h6 class="section-title-secondary">Image Gallery Modaal</h6>
+                        <div class="example-content">
+                            <a href="http://humaan.com/modaal/demo/img/temp/gallery-1.jpg" rel="gallery" class="modaal-image modaal-gallery-thumb" data-modaal-desc="Test image for modal gallery">
+                                <img src="http://humaan.com/modaal/demo/img/temp/gallery-1.jpg" alt="Thumbnail for Gallery Image 1">
+                            </a>
+                            <a href="http://humaan.com/modaal/demo/img/temp/gallery-2.jpg" rel="gallery" class="modaal-image modaal-gallery-thumb" data-modaal-desc="Another description">
+                                <img src="http://humaan.com/modaal/demo/img/temp/gallery-2.jpg" alt="Thumbnail for Gallery Image 4">
+                            </a>
+                            <a href="http://humaan.com/modaal/demo/img/temp/gallery-3.jpg" rel="gallery" class="modaal-image modaal-gallery-thumb" data-modaal-desc="Another description">
+                                <img src="http://humaan.com/modaal/demo/img/temp/gallery-3.jpg" alt="Thumbnail for Gallery Image 2">
+                            </a>
+                            <a href="http://humaan.com/modaal/demo/img/temp/gallery-4.jpg" rel="gallery" class="modaal-image modaal-gallery-thumb">
+                                <img src="http://humaan.com/modaal/demo/img/temp/gallery-4.jpg" alt="Thumbnail for Gallery Image 3">
+                            </a>
+
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;a href="http://humaan.com/modaal/demo/img/temp/gallery-1.jpg" class="modaal-image modaal-gallery-thumb"&gt;
+                                            &lt;img src="http://humaan.com/modaal/demo/img/temp/gallery-1.jpg" alt="Thumbnail for Gallery image 1"&gt;
+                                        &lt;/a&gt;
+                                        &lt;a href="http://humaan.com/modaal/demo/img/temp/gallery-2.jpg" class="modaal-image modaal-gallery-thumb"&gt;
+                                            &lt;img src="http://humaan.com/modaal/demo/img/temp/gallery-2.jpg" alt="Thumbnail for Gallery image 2"&gt;
+                                        &lt;/a&gt;
+                                        &lt;a href="http://humaan.com/modaal/demo/img/temp/gallery-3.jpg" class="modaal-image modaal-gallery-thumb"&gt;
+                                            &lt;img src="http://humaan.com/modaal/demo/img/temp/gallery-3.jpg" alt="Thumbnail for Gallery image 3"&gt;
+                                        &lt;/a&gt;
+                                        &lt;a href="http://humaan.com/modaal/demo/img/temp/gallery-4.jpg" class="modaal-image modaal-gallery-thumb"&gt;
+                                            &lt;img src="http://humaan.com/modaal/demo/img/temp/gallery-4.jpg" alt="Thumbnail for Gallery image 4"&gt;
+                                        &lt;/a&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block js">Js</span>
+                                    <code class="language-javascript">
+                                        $('.modaal-image').modaal({
+                                            type: 'image'
+                                        });
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Video-->
+                        <h6 class="section-title-secondary">Video Modaal</h6>
+                        <div class="example-content">
+                            <a href="https://player.vimeo.com/video/142216434?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" class="button modaal-video">Show Video Modaal</a>
+                            <p class="demo-note">
+                                <em>Note:</em>
+                                <strong>https://www.youtube.com/embed/cBJyo0tgLnw</strong> where the ID at the end is your unique video id. This can be found by selecting 'Share' on a youtube video,
+                                then clicking on 'Embed'. You'll find this URL within
+                                the content presented.
+                            </p>
+                            <p>
+                                <strong>https://player.vimeo.com/video/109626219</strong> where the ID at the end is your unique video id. This can be found by selecting 'Share' on a vimeo video
+                                (commonly seen on the right hand side), and by selecting
+                                the content within 'Embed'. You'll find the URL necessary towards the very beginning of that embed code inside src="".
+                            </p>
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;a href="https://player.vimeo.com/video/142216434?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" class="button modaal-video"&gt;
+                                            Show Video Modaal
+                                        &lt;/a&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block js">Js</span>
+                                    <code class="language-javascript">
+                                        $('.modaal-video').modaal({
+                                            type: 'video'
+                                        });
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!--iFrame-->
+                        <h6 class="section-title-secondary">iFrame Modaal</h6>
+                        <div class="example-content">
+                            <a href="https://neev89.github.io/" class="button modaal-iframe">Show iFrame Modaal</a>
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;a href="https://player.vimeo.com/video/142216434?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" class="button modaal-video"&gt;
+                                            Show iFrame Modaal
+                                        &lt;/a&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block js">Js</span>
+                                    <code class="language-javascript">
+                                        $('.modaal-iframe').modaal({
+                                            type: 'iframe',
+                                            width: 700,
+                                            height: 500
+                                        });
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Confirmation Modaal-->
+                        <h6 class="section-title-secondary">iFrame Modaal</h6>
+                        <div class="example-content">
+                            <a href="javascript:void(0);" class="button modaal-confirm">Show Confirm Modaal</a>
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;a href="javascript:void(0);" class="button modaal-confirm"&gt;
+                                            Show Confirm Modaal
+                                        &lt;/a&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="">
+                                <pre>
+                                    <span class="block js">Js</span>
+                                    <code class="language-javascript">
+                                        $('.modaal-confirm').modaal({
+                                            type: 'confirm',
+                                            confirm_button_text: 'Confirm',
+                                            confirm_cancel_button_text: 'Cancel',
+                                            confirm_title: 'Confirm Action',
+                                            confirm_content: '<p>This is just a dummy confirmation description.</p>',
+                                            confirm_callback: function() {
+                                                alert('you have confirmed this action');
+                                            },
+                                            confirm_cancel_callback: function() {
+                                                alert('you have cancelled this action');
+                                            }
+                                        });
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <!--Instagram-->
+                        <h6 class="section-title-secondary">Instagram Modaal</h6>
+                        <div class="example-content">
+                            <a href="#ig" class="modaal button" data-modaal-type="instagram" data-modaal-instagram-id="BAGj2JqHFV6">Show Modaal</a>
+                            <div class="">
+                                <pre>
+                                    <span class="block html">HTML</span>
+                                    <code class="language-markup">
+                                        &lt;a href="#ig" class="modaal button" data-modaal-type="instagram" data-modaal-instagram-id="BAGj2JqHFV6">Show Modaal&lt;/a&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!--Tooltips-->
                 <section id="tooltips" class="container">
                     <h1 class="section-title">Tooltips</h1>
@@ -1819,12 +4071,10 @@
                                         &lt;div class="inline"&gt;&lt;/div&gt;
                                         <!-- display: inline-block; -->
                                         &lt;div class="inline-block"&gt;&lt;/div&gt;
-                                        <!-- display: flex; -->
-                                        &lt;div class="flex"&gt;&lt;/div&gt;
-                                        <!-- display: inline-flex; -->
-                                        &lt;div class="inline-flex"&gt;&lt;/div&gt;
                                         <!-- display: none; -->
                                         &lt;div class="hide"&gt;&lt;/div&gt;
+                                        <!-- display: block; -->
+                                        &lt;div class="show"&gt;&lt;/div&gt;
                                         <!-- visibility: visible; -->
                                         &lt;div class="visible"&gt;&lt;/div&gt;
                                         <!-- visibility: hidden; -->
@@ -1857,11 +4107,10 @@
                                             <!-- centered block -->
                                             &lt;div class="centered"&gt;&lt;/div&gt;
                                             <!-- margin: 10px and 5px in 4 directions. mt-10 = margin-top: 10px; -->
+                                            &lt;div class="mt-20"&gt;&lt;/div&gt;
+                                            &lt;div class="mt-15"&gt;&lt;/div&gt;
                                             &lt;div class="mt-10"&gt;&lt;/div&gt;
                                             &lt;div class="mt-5"&gt;&lt;/div&gt;
-                                            <!-- padding: 10px and 5px in 4 directions. pt-10 = padding-top: 10px; -->
-                                            &lt;div class="pt-10"&gt;&lt;/div&gt;
-                                            &lt;div class="pt-5"&gt;&lt;/div&gt;
                                         </code>
                                     </pre>
                                 </div>
@@ -1899,13 +4148,6 @@
                                             &lt;div class="text-italic"&gt;&lt;/div&gt;
                                             <!-- Larger text (120%) -->
                                             &lt;div class="text-large"&gt;&lt;/div&gt;
-
-                                            <!-- Overflow behavior: display an ellipsis to represent clipped text -->
-                                            &lt;div class="text-ellipsis"&gt;&lt;/div&gt;
-                                            <!-- Overflow behavior: truncate the text -->
-                                            &lt;div class="text-clip"&gt;&lt;/div&gt;
-                                            <!-- Text may be broken at arbitrary points -->
-                                            &lt;div class="text-break"&gt;&lt;/div&gt;
                                         </code>
                                     </pre>
                                 </div>
@@ -1983,7 +4225,6 @@
 
                     </div>
                 </section>
-
             </div>
         </div>
     </div>
