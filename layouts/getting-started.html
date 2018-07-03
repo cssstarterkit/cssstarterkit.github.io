@@ -131,32 +131,38 @@
                                     &lt;!DOCTYPE html&gt;
                                         &lt;html&gt;
                                         &lt;head&gt;
-                                            &lt;title&gt;Basic Template&lt;/title&gt;
 
                                             &lt;meta charset="utf-8"&gt;
                                             &lt;meta http-equiv="x-ua-compatible" content="ie=edge"&gt;
-                                            &lt;title&gt;&lt;/title&gt;
                                             &lt;meta name="description" content=""&gt;
                                             &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 
-                                            &lt;link rel="manifest" href="site.webmanifest"&gt;
+                                            &lt;title&gt;Your Web Application&lt;/title&gt;
+
+                                            <!--Favicon-->
                                             &lt;link rel="apple-touch-icon" href="favicon.ico"&gt;
 
                                             <!-- CSS -->
-                                            &lt;link rel="stylesheet" href="../css/vendor.min.css"&gt;
-                                            &lt;link rel="stylesheet" href="../css/app.min.css"&gt;
+                                            &lt;link rel="stylesheet" href=".dist/css/vendor.min.css"&gt;
+                                            &lt;link rel="stylesheet" href=".dist/css/app.min.css"&gt;
 
                                         &lt;/head&gt;
                                         &lt;body&gt;
                                             <!--[if lte IE 9]>
                                             &lt;p class="browserupgrade"&gt;You are using an &lt;strong>outdated&lt;/strong&gt; browser. Please &lt;a href="https://browsehappy.com/"&gt;upgrade your browser&lt;/a&gt; to improve your experience and security.&lt;/p&gt;
                                             <![endif]-->
+                                            <!--Header-->
+                                            &lt;header id="header" class="header"&gt;&lt;/header&gt;
 
-                                            &lt;main&gt;
-                                                &lt;div class="main-wrapper"&gt;
+                                            <!--Site content-->
+                                            &lt;main id="main" class="site-wrapper"&gt;
+                                                &lt;div class="site-content"&gt;
                                                     Your content goes here...
                                                 &lt;/div&gt;
                                             &lt;/main&gt;
+
+                                            <!--Footer-->
+                                            &lt;footer id="footer" class="footer"&gt;&lt;/footer&gt;
 
                                             &lt;script src="../js/vendor.min.js"&gt;&lt;/script&gt;
                                             &lt;script src="../js/app.min.js"&gt;&lt;/script&gt;
@@ -229,11 +235,11 @@
                             <button class="button">Orange</button>
                             <button class="button button-round">Banana</button>
                             <button class="button button-round button-icon">
-                                <i class="fa fa-camera-retro"></i>
+                                <span class="jam jam-camera"></span>
                                 Grapes
                             </button>
                             <button class="button button-default button-icon-circle button-icon">
-                                <i class="fa fa-camera-retro"></i>
+                                <span class="jam jam-video-camera-vintage"></span>
                             </button>
                             <pre>
                                 <span class="html block">HTML</span>
@@ -2530,7 +2536,7 @@
                 <!--Grid-->
                 <section id="grid" class="container">
                     <h1 class="section-title">Flexbox Grid Responsive</h1>
-                    <div class="content-section">
+                    <div class="content-section" style="padding-top: 90px;">
                         <!--Responsive-->
                         <div class="page-section">
                             <h6 class="section-title-secondary">Responsive</h6>
@@ -3540,7 +3546,7 @@
                             <div class="alert alert-custom">
                                 <div class="alert-container">
                                     <div class="alert-icon">
-                                        <i class="fa fa-warning"></i>
+                                        <span class="jam jam-cog-f"></span>
                                     </div>
                                     <button type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
                                         <span>clear</span>
@@ -3551,7 +3557,7 @@
                             <div class="alert alert-info">
                                 <div class="alert-container">
                                     <div class="alert-icon">
-                                        <i class="fa fa-info-circle"></i>
+                                        <span class="jam jam-message-writing-alt-f"></span>
                                     </div>
                                     <button type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
                                         <span>clear</span>
@@ -3562,7 +3568,7 @@
                             <div class="alert alert-success">
                                 <div class="alert-container">
                                     <div class="alert-icon">
-                                        <i class="fa fa-check"></i>
+                                        <span class="jam jam-check"></span>
                                     </div>
                                     <button type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
                                         <span>clear</span>
@@ -3573,7 +3579,7 @@
                             <div class="alert alert-warning">
                                 <div class="alert-container">
                                     <div class="alert-icon">
-                                        <i class="fa fa-warning"></i>
+                                        <span class="jam jam-plug"></span>
                                     </div>
                                     <button type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
                                         <span>clear</span>
@@ -3584,7 +3590,7 @@
                             <div class="alert alert-danger">
                                 <div class="alert-container">
                                     <div class="alert-icon">
-                                        <i class="fa fa-info-circle"></i>
+                                        <span class="jam jam-ghost-f"></span>
                                     </div>
                                     <button type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
                                         <span>clear</span>
@@ -3599,10 +3605,10 @@
                                      &lt;div class="alert alert-custom"&gt;
                                          &lt;div class="alert-container"&gt;
                                              &lt;div class="alert-icon"&gt;
-                                                 &lt;i class="fa fa-warning"&gt; &lt;/i&gt;
+                                                 &lt;span class="jam jam-cog-f"&gt; &lt;/i&gt;
                                              &lt;/div&gt;
                                              &lt;button type="button" class="close-icon" data-dismiss="alert" aria-label="Close"&gt;
-                                                 &lt;span&gt;clear &lt;/span&gt;
+                                                 &lt;span&gt;clear&lt;/span&gt;
                                              &lt;/button&gt;
                                              &lt;b class="alert-info"&gt;Custom alert: &lt;/b&gt; You've got some error prepare for it...
                                          &lt;/div&gt;
@@ -3627,12 +3633,12 @@
                         <!--Simple Dropdown-->
                         <h6 class="section-title-secondary">Simple Dropdown</h6>
                         <div class="example-content">
-                            <div class="plain-dropdown">
-                                <button class="button button-warning" type="button" data-toggle="plain-dropdown">
+                            <div class="dropdown">
+                                <button class="button button-warning" type="button" data-toggle="dropdown">
                                     Dropdown
                                     <span class="caret"></span>
                                 </button>
-                                <ul id="plain-dropdown-menu" class="closed">
+                                <ul id="dropdown-menu" class="closed">
                                     <li><a>First item</a></li>
                                     <li><a href="#">Second item</a></li>
                                     <li><a href="#">Third item</a></li>
@@ -3644,12 +3650,12 @@
                                 <pre>
                                     <span class="html block">HTML</span>
                                     <code class="language-markup">
-                                        &lt;div class="plain-dropdown"&gt;
-                                            &lt;button class="button button-warning" type="button" data-toggle="plain-dropdown"&gt;
+                                        &lt;div class="dropdown"&gt;
+                                            &lt;button class="button button-warning" type="button" data-toggle="dropdown"&gt;
                                                 Dropdown
                                                 &lt;span class="caret"&gt;&lt;/span&gt;
                                             &lt;/button&gt;
-                                            &lt;ul id="plain-dropdown-menu" class="closed"&gt;
+                                            &lt;ul id="dropdown-menu" class="closed"&gt;
                                                 &lt;li&gt;&lt;a &gt;First item&lt;/a&gt;&lt;/li&gt;
                                                 &lt;li&gt;&lt;a href="#"&gt;Second item&lt;/a&gt;&lt;/li&gt;
                                                 &lt;li&gt;&lt;a href="#"&gt;Third item&lt;/a&gt;&lt;/li&gt;
@@ -3701,9 +3707,26 @@
                 <section id="modaal" class="container">
                     <h1 class="section-title">Modaal</h1>
                     <p class="section-description">
-                        An accessible dialog window library for all humans.
+                        An accessible dialog window library for all one. The simplest modal you ever did see.
                     </p>
                     <div class="content-section">
+
+                        <div class="demo">
+                            <a href="#default-demo" class="default-demo open button">Click here to open</a>
+
+                            <div id="default-demo">
+                                <div class="header">
+                                    <h3>Modal Title</h3>
+                                    <input type="button" value="×" class="modaly-close" />
+                                </div>
+
+                                <div class="body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in dui facilisis, congue justo sed, sodales mauris. Fusce sagittis metus a ex volutpat ultrices. Duis sit amet enim mauris. Suspendisse congue arcu libero, sed imperdiet enim suscipit eu. Vestibulum vestibulum, tortor a elementum consequat, turpis ante gravida lorem, eget euismod dui nisi in ante. Nunc id ipsum venenatis, rhoncus felis pretium, dictum tellus. Curabitur accumsan, lacus luctus volutpat dictum, ipsum purus efficitur sapien, sit amet blandit tellus mi sed nisl.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
                         <!--Simple Modal-->
                         <h6 class="section-title-secondary">Simple Modaal</h6>
                         <div class="example-content">
@@ -4142,6 +4165,8 @@
                                         &lt;div class="text-hide"&gt;&lt;/div&gt;
                                         <!-- assistive text for screen reader -->
                                         &lt;div class="text-assistive"&gt;&lt;/div&gt;
+
+                                        &lt;div class="overflow-hidden"&gt;&lt;/div&gt;
                                     </code>
                                     </pre>
                             </div>
@@ -4155,22 +4180,23 @@
                                     <pre>
                                         <span class="html block">HTML</span>
                                         <code class="language-markup">
-                                            <!-- clear float -->
-                                            &lt;div class="clearfix"&gt;&lt;/div&gt;
-                                            <!-- float: left and right -->
+                                            &lt;div class="clear"&gt;&lt;/div&gt;
+
                                             &lt;div class="float-left"&gt;&lt;/div&gt;
                                             &lt;div class="float-right"&gt;/div&gt;
-                                            <!-- position: relative, absolute and fixed -->
+                                            &lt;div class="float-none"&gt;/div&gt;
+
                                             &lt;div class="rel"&gt;&lt;/div&gt;
                                             &lt;div class="abs"&gt;&lt;/div&gt;
                                             &lt;div class="fixed"&gt;&lt;/div&gt;
-                                            <!-- centered block -->
-                                            &lt;div class="centered"&gt;&lt;/div&gt;
-                                            <!-- margin: 10px and 5px in 4 directions. mt-10 = margin-top: 10px; -->
+
                                             &lt;div class="mt-20"&gt;&lt;/div&gt;
                                             &lt;div class="mt-15"&gt;&lt;/div&gt;
                                             &lt;div class="mt-10"&gt;&lt;/div&gt;
                                             &lt;div class="mt-5"&gt;&lt;/div&gt;
+                                            &lt;div class="m-0"&gt;&lt;/div&gt;
+
+                                            &lt;div class="p-0"&gt;&lt;/div&gt;
                                         </code>
                                     </pre>
                                 </div>

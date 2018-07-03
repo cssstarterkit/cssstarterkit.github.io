@@ -62,19 +62,17 @@ $(document).ready(function () {
     var accordion = new Accordion($('#accordion'), false);
 
     //Plain-Dropdown
-    $('.plain-dropdown .button').click(function (e) {
+    $('.dropdown .button').click(function (e) {
         e.stopPropagation();
-        $('#plain-dropdown-menu').toggleClass('open');
-        return $('#plain-dropdown-menu li a').removeClass();
+        $('#dropdown-menu').toggleClass('open');
+        return $('#dropdown-menu li a').removeClass();
     });
-
-    $('#plain-dropdown-menu li a').click(function (e) {
+    $('#dropdown-menu li a').click(function (e) {
         $(this).addClass("flash");
-        return $('#plain-dropdown-menu').removeClass('open');
+        return $('#dropdown-menu').removeClass('open');
     });
-
     $('html').click(function () {
-        return $('#plain-dropdown-menu').removeClass('open');
+        return $('#dropdown-menu').removeClass('open');
     });
 
 
@@ -133,14 +131,21 @@ $(document).ready(function () {
 
     //Accordion Initialization
     $('#only-one [data-accordion]').accordion();
-
     $('#multiple [data-accordion]').accordion({
         singleOpen: false
     });
-
     $('#single[data-accordion]').accordion({
         transitionEasing: 'cubic-bezier(0.455, 0.030, 0.515, 0.955)',
         transitionSpeed: 200
+    });
+
+    $('.default-demo').modaly(
+        {closeButton: false}).on('click',function () {
+        $('body').addClass('overflow-hidden');
+    });
+
+    $('#modaly-overlay').on('click',function () {
+        $('body').removeClass('overflow-hidden');
     });
 });
 

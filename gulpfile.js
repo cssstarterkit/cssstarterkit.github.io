@@ -16,7 +16,8 @@ elixir(function (mix) {
         .styles([
             './assets/sass/vendor/normalize/normalize.css',
             './assets/sass/vendor/prism/prism.css',
-            './assets/sass/vendor/jam-icons-css/jam-icons.css'
+            './assets/sass/vendor/jam-icons-css/jam-icons.css',
+            './assets/sass/vendor/modal-css/jquery.modaly.css'
         ], './public/css/vendor.css');
 
     mix.scripts('./assets/js/script.js', './public/js/app.js')
@@ -26,6 +27,7 @@ elixir(function (mix) {
         './assets/js/vendor/modernizr-2.8.3.min.js',
         './assets/js/vendor/accordion-js/accordion.js',
         './assets/js/vendor/modaal-js/modaal.min.js',
+        './assets/js/vendor/modal-js/jquery.modaly.js',
         './assets/js/vendor/prism-js/prism.js',
         './assets/js/vendor/prism-js/prism-normalize-whitespace.js'
     ], './public/js/vendor.js')

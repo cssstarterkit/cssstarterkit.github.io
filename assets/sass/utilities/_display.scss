@@ -10,20 +10,12 @@
   display: inline-block;
 }
 
-.flex {
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-}
-
-.inline-flex {
-  display: inline-flex;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-}
-
 .hide {
   display: none !important;
+}
+
+.show {
+  display: block !important;
 }
 
 .visible {
@@ -54,6 +46,6 @@
   width: .1rem;
 }
 
-.no-overflow {
+.overflow-hidden {
   overflow: hidden;
 }
